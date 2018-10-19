@@ -1,0 +1,27 @@
+{
+  "@context": "http://schema.org/",
+  "@graph": [
+    {
+      "id": "_:b0",
+      "type": "http://id.loc.gov/ontologies/bibframe/Work",
+      "http://example.org/predicate": "An Object",
+      "http://id.loc.gov/ontologies/bibframe/content": {
+        "id": "http://id.loc.gov/vocabulary/contentTypes/txt"
+      },
+      "http://id.loc.gov/ontologies/bibframe/originDate": "2018-10-19",
+      "http://id.loc.gov/ontologies/bibframe/title": {
+        "id": "_:b1"
+      }
+    },
+    {
+      "id": "http://id.loc.gov/vocabulary/contentTypes/txt",
+      "type": "http://id.loc.gov/ontologies/bibframe/Content",
+      "rdfs:label": "text"
+    },
+    {
+      "id": "_:b1",
+      "type": "http://id.loc.gov/ontologies/bibframe/Title",
+      "http://id.loc.gov/ontologies/bibframe/mainTitle": "The Thing - Compacted"
+    }
+  ]
+}

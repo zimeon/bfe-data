@@ -55,4 +55,14 @@ Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied
 
 Same procedure, Load Work from <https://zimeon.github.io/bfe-data/03_work_extra_triple.json> works fine, shows new title and date. As expected, does not show new data on form because this isn't set up in a profile. But, does show the extra triple in the RDF when Preview is selected. So, the extra triple is retained.
 
+## 4. Other JSON-LD forms... compacted
 
+Go to [JSON-LD playground](https://json-ld.org/playground/), load previous example as input, select "Compacted" form, copy output and change title to end with "- Compacted".
+
+--> <https://zimeon.github.io/bfe-data/04_work_compacted.jsonld>
+
+## 5. Other JSON-LD forms... expanded
+
+Go to [JSON-LD playground](https://json-ld.org/playground/), load example 3 again as input, select "Expanded" formr, copy output and change title to end with "- Expanded".
+
+--> <https://zimeon.github.io/bfe-data/05_work_expanded.jsonld>
