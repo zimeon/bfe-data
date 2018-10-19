@@ -1,5 +1,7 @@
 # Exploring BFE data import
 
+These notes from <https://github.com/zimeon/bfe-data>.
+
 ## Minimal Work in Monograph profile
 
 ### 1. Create test Work
@@ -87,4 +89,18 @@ Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Mono
 
 --> <https://zimeon.github.io/bfe-data/11_instance.jsonld>
 
-Attempting to load this in the "Load IBC" does not seem to work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded.
+Attempting to load this in the "Load IBC" does not seem to work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded. Javascript console shows:
+
+```
+VM71:1 GET http://bibframe.org/bibliomata/profile-edit/server/retrieveLDS?uri=https%3A%2F%2Fzimeon.github.io%2Fbfe-data%2F11_instance.jsonld 503 (Service Unavailable)
+(anonymous) @ VM71:1
+send @ jquery.min.js:4
+ajax @ jquery.min.js:4
+exports.retrieveLDS @ bfe.js:5510
+(anonymous) @ bfe.js:931
+dispatch @ jquery.min.js:3
+r.handle @ jquery.min.js:3
+bfe.js:4362 bibliomata/bfe/builds/bfe.js:5528 -> FAILED to load external source: http://bibframe.org/bibliomata/profile-edit/server/retrieveLDS
+bfe.js:4362 bibliomata/bfe/builds/bfe.js:5529 -> Request status: error; Error msg: Service Unavailable
+```
+
