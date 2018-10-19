@@ -15,9 +15,10 @@
    "bf:mainTitle": "An Instance"
   },
   {
-   "@id": "http://id.loc.gov/resources/instances/e187574127286013533488376157810939664368",
+   "@id": "_:b1",
+   "@type": "bf:Instance",
    "bf:title": {
-    "@id": "_:bnodejH33Q5ArbbLnha8yTgF5BN"
+    "@id": "_:b0"
    }
   }
  ]

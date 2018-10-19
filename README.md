@@ -51,9 +51,9 @@ Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied
 >    "bf:mainTitle": "The Thing - Extra Data"
 ```
 
---> <https://zimeon.github.io/bfe-data/03_work_extra_triple.json>
+--> <https://zimeon.github.io/bfe-data/03_work_extra_triple.jsonld>
 
-Same procedure, Load Work from <https://zimeon.github.io/bfe-data/03_work_extra_triple.json> works fine, shows new title and date. As expected, does not show new data on form because this isn't set up in a profile. But, does show the extra triple in the RDF when Preview is selected. So, the extra triple is retained.
+Same procedure, Load Work from <https://zimeon.github.io/bfe-data/03_work_extra_triple.jsonld> works fine, shows new title and date. As expected, does not show new data on form because this isn't set up in a profile. But, does show the extra triple in the RDF when Preview is selected. So, the extra triple is retained.
 
 ## 4. Other JSON-LD forms... compacted
 
