@@ -10,18 +10,43 @@
  },
  "@graph": [
   {
-   "@id": "_:bnodejH33Q5ArbbLnha8yTgF5BN",
+   "@id": "http://id.loc.gov/resources/instances/e93211693577620536533546183858602884391",
+   "@type": "bf:Instance",
+   "bf:carrier": {
+    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
+   },
+   "bf:issuance": {
+    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
+   },
+   "bf:media": {
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
+   },
+   "bf:title": {
+    "@id": "_:bnode7ZhNN2V8jv1XjBGERKYYGb"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+   "@type": "bf:Issuance",
+   "rdfs:label": "single unit"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+   "@type": "bf:Media",
+   "rdfs:label": "unmediated"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+   "@type": "bf:Carrier",
+   "rdfs:label": "volume"
+  },
+  {
+   "@id": "_:bnode7ZhNN2V8jv1XjBGERKYYGb",
    "@type": [
     "bf:Title",
     "bf:Title"
    ],
    "bf:mainTitle": "An Instance"
-  },
-  {
-   "@id": "http://id.loc.gov/resources/instances/e187574127286013533488376157810939664368",
-   "bf:title": {
-    "@id": "_:bnodejH33Q5ArbbLnha8yTgF5BN"
-   }
   }
  ]
 }
