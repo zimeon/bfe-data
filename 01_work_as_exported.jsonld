@@ -1,0 +1,37 @@
+{
+ "@context": {
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "bf": "http://id.loc.gov/ontologies/bibframe/",
+  "bflc": "http://id.loc.gov/ontologies/bflc/",
+  "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
+  "pmo": "http://performedmusicontology.org/ontology/"
+ },
+ "@graph": [
+  {
+   "@id": "http://id.loc.gov/resources/works/e289146822784588077004627201841415121964",
+   "@type": "bf:Work",
+   "bf:content": {
+    "@id": "http://id.loc.gov/vocabulary/contentTypes/txt"
+   },
+   "bf:originDate": "2018-10-19",
+   "bf:title": {
+    "@id": "_:bnode5c8go15KEHTz99pytb6gca"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/contentTypes/txt",
+   "@type": "bf:Content",
+   "rdfs:label": "text"
+  },
+  {
+   "@id": "_:bnode5c8go15KEHTz99pytb6gca",
+   "@type": [
+    "bf:Title",
+    "bf:Title"
+   ],
+   "bf:mainTitle": "The Thing"
+  }
+ ]
+}
