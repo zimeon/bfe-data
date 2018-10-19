@@ -61,8 +61,12 @@ Go to [JSON-LD playground](https://json-ld.org/playground/), load previous examp
 
 --> <https://zimeon.github.io/bfe-data/04_work_compacted.jsonld>
 
+Again, is loaded fine, show expected data. Preview has normalized form with extra triple.
+
 ## 5. Other JSON-LD forms... expanded
 
 Go to [JSON-LD playground](https://json-ld.org/playground/), load example 3 again as input, select "Expanded" formr, copy output and change title to end with "- Expanded".
 
 --> <https://zimeon.github.io/bfe-data/05_work_expanded.jsonld>
+
+Again, is loaded fine, show expected data. Preview has normalized form with extra triple.
