@@ -11,15 +11,39 @@
  "@graph": [
   {
    "@id": "_:b0",
-   "@type": "bf:Title",
-   "bf:mainTitle": "An Instance"
+   "@type": "bf:Instance",
+   "bf:carrier": {
+    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
+   },
+   "bf:issuance": {
+    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
+   },
+   "bf:media": {
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
+   },
+   "bf:title": {
+    "@id": "_:b1"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+   "@type": "bf:Issuance",
+   "rdfs:label": "single unit"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+   "@type": "bf:Media",
+   "rdfs:label": "unmediated"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+   "@type": "bf:Carrier",
+   "rdfs:label": "volume"
   },
   {
    "@id": "_:b1",
-   "@type": "bf:Instance",
-   "bf:title": {
-    "@id": "_:b0"
-   }
+   "@type": "bf:Title",
+   "bf:mainTitle": "An Instance"
   }
  ]
 }

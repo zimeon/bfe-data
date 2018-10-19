@@ -1,6 +1,8 @@
 # Exploring BFE data import
 
-## 1. Create test Work
+## Minimal Work in Monograph profile
+
+### 1. Create test Work
 
 Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Monograph / Work. Entered work title "The Thing", date of work "2018-10-19". Click preview at bottom of page, copy JSON-LD from panel.
 
@@ -8,7 +10,7 @@ Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Mono
 
 Starting [BFE](http://bibframe.org/bibliomata/bfe/development.html) again, Load Work, enter URL `https://zimeon.github.io/bfe-data/01_work_as_exported.jsonld` then click Submit URL. Goes to editor page with title and date shown.
 
-## 2. Tidy the data
+### 2. Tidy the data
 
 Make some arbitrary bnode URIs instead of the ones output, and remove the duplicate type definition, change title to add "- Titied":
 
@@ -39,7 +41,7 @@ Make some arbitrary bnode URIs instead of the ones output, and remove the duplic
 
 Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied.jsonld> works fine, shows new title and date.
 
-## 3. Add extra data on the Work
+### 3. Add extra data on the Work
 
 ```
 > diff 02_work_tidied.jsonld 03_work_extra_triple.json
@@ -55,7 +57,7 @@ Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied
 
 Same procedure, Load Work from <https://zimeon.github.io/bfe-data/03_work_extra_triple.jsonld> works fine, shows new title and date. As expected, does not show new data on form because this isn't set up in a profile. But, does show the extra triple in the RDF when Preview is selected. So, the extra triple is retained.
 
-## 4. Other JSON-LD forms... compacted
+### 4. Other JSON-LD forms... compacted
 
 Go to [JSON-LD playground](https://json-ld.org/playground/), load previous example as input, select "Compacted" form, copy output and change title to end with "- Compacted".
 
@@ -63,10 +65,26 @@ Go to [JSON-LD playground](https://json-ld.org/playground/), load previous examp
 
 Again, is loaded fine, show expected data. Preview has normalized form with extra triple.
 
-## 5. Other JSON-LD forms... expanded
+### 5. Other JSON-LD forms... expanded
 
 Go to [JSON-LD playground](https://json-ld.org/playground/), load example 3 again as input, select "Expanded" formr, copy output and change title to end with "- Expanded".
 
 --> <https://zimeon.github.io/bfe-data/05_work_expanded.jsonld>
 
 Again, is loaded fine, show expected data. Preview has normalized form with extra triple.
+
+### Conclusions for minimal Work in Monograph profile
+
+From this experiment it seems that BFE does not care about the form of JSON-LD it gets. BFE is also happy to accept and persist extra triples (I tested with just one but assume that carries over for many), but obviously only shows things that a given profile knows about. However, if you go to Preview the extra data is shown in Turtle, JSON-LD and RDF/XML displays.
+
+During these tests I found the UI to be flakey — sometimes I’d try to enter a URL and load, and then nothing would happen (was using Chrome on Mac). Other times it worked fine so I just retried when it appeared to fail.
+
+## Minimal Instance with Monograph profile
+
+### 11. Create test minimal Instance
+
+Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Monograph / Instance. Entered instance title "An Instance". Click preview at bottom of page, copy JSON-LD from panel.
+
+--> <https://zimeon.github.io/bfe-data/11_instance.jsonld>
+
+Attempting to load this in the "Load IBC" does not seem to work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded.
