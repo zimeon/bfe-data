@@ -37,12 +37,22 @@ Make some arbitrary bnode URIs instead of the ones output, and remove the duplic
 
 --> <https://zimeon.github.io/bfe-data/02_work_tidied.jsonld>
 
+Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied.jsonld> works fine, shows new title and date.
+
 ## 3. Add extra data on the Work
 
 ```
 > diff 02_work_tidied.jsonld 03_work_extra_triple.json
 14a15
 >    "http://example.org/predicate": "An Object",
+31c32
+<    "bf:mainTitle": "The Thing - Tidied"
+---
+>    "bf:mainTitle": "The Thing - Extra Data"
 ```
 
 --> <https://zimeon.github.io/bfe-data/03_work_extra_triple.json>
+
+Same procedure, Load Work from <https://zimeon.github.io/bfe-data/03_work_extra_triple.json> works fine, shows new title and date. As expected, does not show new data on form because this isn't set up in a profile. But, does show the extra triple in the RDF when Preview is selected. So, the extra triple is retained.
+
+
