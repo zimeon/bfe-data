@@ -134,9 +134,20 @@ Works fine and shows the same data as 11 (modulo title change). The title, the c
 
 ### 13. Simplifying
 
-If this JSON-LD is simplified (while still retaining the explicit `_:b1` `bf:Title` bnode which shouldn't be necessary) then we get a form that loads but does not show title or the carrier/media/issuance labels:
+If this JSON-LD is simplified (while still retaining the explicit `_:b1` `bf:Title` bnode which shouldn't be necessary) as follows:
 
 --> <https://zimeon.github.io/bfe-data/13_instance_simplified.jsonld>
+
+This loads but without title or labels. In the preview output there are only 5 triples (whereas the input has 13):
+
+```
+...
+_:b0_b0 bf:carrier <http://id.loc.gov/vocabulary/carriers/nc>;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono>;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n>;
+    bf:title _:b0_b1;
+    a bf:Instance.
+```
 
 There is no change if the JSON-LD in expanded or compacted:
 
@@ -180,7 +191,34 @@ Parsed 13 statements in 0.020405 seconds @ 637.0987503062975 statements/second.
 
 ### 14. Over Simplifying
 
-Taking this one step further, 
+Taking this one step further, we can removed the `@graph` to get simpler JSON-LD:
+
 --> <https://zimeon.github.io/bfe-data/14_instance_oversimplified.jsonld>
+
+This loads but without title or labels. In the preview output there are only 5 triples, the same as with `13_instance_simplified.jsonld`:
+
+```
+... 
+_:b0_b0 bf:carrier <http://id.loc.gov/vocabulary/carriers/nc>;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono>;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n>;
+    bf:title _:b0_b1;
+    a bf:Instance.
+```
+
+Whereas, again, the input converts to the same 13 triples as `12_instance_tidied.jsonld` (modulo title):
+
+```
+> jsonld --format ntriples 14_instance_oversimplified.jsonld | sort > 14.nt
+
+Parsed 13 statements in 0.019161 seconds @ 678.4614581702416 statements/second.
+> diff 12.nt 14.nt 
+13c13
+< _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "An Instance - Tidied" .
+---
+> _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "An Instance - Over-Simplified" .
+```
+
+**CONCLUSION OF TESTS 12 and 13 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion or compaction do not solve the issue.**
 
 
