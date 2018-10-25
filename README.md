@@ -1,6 +1,6 @@
 # Exploring BFE data import
 
-These notes from <https://github.com/zimeon/bfe-data>.
+These notes from <https://github.com/zimeon/bfe-data>, nice form at <https://zimeon.github.io/bfe-data/>.
 
 ## Minimal Work in Monograph profile
 
