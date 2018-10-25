@@ -91,4 +91,54 @@ Went to <http://bibframe.org/bfe/index.html> created a new Monograph / Instance.
 
 2018-10-19 -- Attempting to load this in the "Load IBC" did not work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded. @kirkhess resolved an issue with expectations of `instanceOf` to fix this.
 
-Now this loads fine and shows the Instance 
+Now this loads fine and shows the Instance.
+
+### 12. Tidy without changing structure
+
+Tidying to remove some unused cruft and use generic bnode names as follows:
+
+```
+> diff 11_instance.jsonld 12_instance_tidied.jsonld
+5,9c5
+<   "xsd": "http://www.w3.org/2001/XMLSchema#",
+<   "bf": "http://id.loc.gov/ontologies/bibframe/",
+<   "bflc": "http://id.loc.gov/ontologies/bflc/",
+<   "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
+<   "pmo": "http://performedmusicontology.org/ontology/"
+---
+>   "bf": "http://id.loc.gov/ontologies/bibframe/"
+13c9
+<    "@id": "http://id.loc.gov/resources/instances/e93211693577620536533546183858602884391",
+---
+>    "@id": "_:b0",
+25c21
+<     "@id": "_:bnode7ZhNN2V8jv1XjBGERKYYGb"
+---
+>     "@id": "_:b1"
+44,49c40,42
+<    "@id": "_:bnode7ZhNN2V8jv1XjBGERKYYGb",
+<    "@type": [
+<     "bf:Title",
+<     "bf:Title"
+<    ],
+<    "bf:mainTitle": "An Instance"
+---
+>    "@id": "_:b1",
+>    "@type": "bf:Title",
+>    "bf:mainTitle": "An Instance - Tidied"
+```
+
+--> <https://zimeon.github.io/bfe-data/12_instance_tidied.jsonld>
+
+Works fine and shows the same data as 11 (modulo title change).
+
+### 13. Simplifying
+
+--> <https://zimeon.github.io/bfe-data/13_instance_simplified.jsonld>
+
+### 14. Over Simplifying
+
+--> <https://zimeon.github.io/bfe-data/14_instance_oversimplified.jsonld>
+
+
+

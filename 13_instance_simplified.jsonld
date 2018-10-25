@@ -9,19 +9,28 @@
    "@id": "_:b0",
    "@type": "bf:Instance",
    "bf:carrier": {
-    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
+    "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+    "@type": "bf:Issuance",
+    "rdfs:label": "single unit"
    },
    "bf:issuance": {
-    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
+    "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+    "@type": "bf:Media",
+    "rdfs:label": "unmediated"
    },
    "bf:media": {
-    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+    "@type": "bf:Carrier",
+    "rdfs:label": "volume"
    },
    "bf:title": {
-    "@id": "_:b1",
-    "@type": "bf:Title",
-    "bf:mainTitle": "An Instance - Simplified"
+    "@id": "_:b1"
    }
+  },
+  {
+   "@id": "_:b1",
+   "@type": "bf:Title",
+   "bf:mainTitle": "An Instance - Simplified"
   }
  ]
 }
