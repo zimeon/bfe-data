@@ -4,24 +4,26 @@
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "bf": "http://id.loc.gov/ontologies/bibframe/"
  },
- "@graph": [
-  {
-   "@id": "_:b0",
-   "@type": "bf:Instance",
-   "bf:carrier": {
-    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
-   },
-   "bf:issuance": {
-    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
-   },
-   "bf:media": {
-    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
-   },
-   "bf:title": {
-    "@id": "_:b1",
-    "@type": "bf:Title",
-    "bf:mainTitle": "An Instance - Over-Simplified"
-   }
-  }
- ]
+ "@id": "_:b0",
+ "@type": "bf:Instance",
+ "bf:carrier": {
+  "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+  "@type": "bf:Carrier",
+  "rdfs:label": "volume"
+ },
+ "bf:issuance": {
+  "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+  "@type": "bf:Issuance",
+  "rdfs:label": "single unit"
+ },
+ "bf:media": {
+  "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+  "@type": "bf:Media",
+  "rdfs:label": "unmediated"
+ },
+ "bf:title": {
+  "@id": "_:b1",
+  "@type": "bf:Title",
+  "bf:mainTitle": "An Instance - Over-Simplified"
+ }
 }

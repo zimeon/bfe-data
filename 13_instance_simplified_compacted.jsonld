@@ -1,0 +1,25 @@
+{
+  "@id": "_:b0",
+  "@type": "http://id.loc.gov/ontologies/bibframe/Instance",
+  "http://id.loc.gov/ontologies/bibframe/carrier": {
+    "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Carrier",
+    "http://www.w3.org/2000/01/rdf-schema#label": "volume"
+  },
+  "http://id.loc.gov/ontologies/bibframe/issuance": {
+    "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Issuance",
+    "http://www.w3.org/2000/01/rdf-schema#label": "single unit"
+  },
+  "http://id.loc.gov/ontologies/bibframe/media": {
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Media",
+    "http://www.w3.org/2000/01/rdf-schema#label": "unmediated"
+  },
+  "http://id.loc.gov/ontologies/bibframe/title": {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Title",
+    "http://id.loc.gov/ontologies/bibframe/mainTitle": "An Instance - Simplified"
+  }
+}
+

@@ -130,16 +130,57 @@ Tidying to remove some unused cruft and use generic bnode names as follows:
 
 --> <https://zimeon.github.io/bfe-data/12_instance_tidied.jsonld>
 
-Works fine and shows the same data as 11 (modulo title change).
+Works fine and shows the same data as 11 (modulo title change). The title, the carrier/media/issuance labels all show fine. There are 13 triples in the turtle preview.
 
 ### 13. Simplifying
 
+If this JSON-LD is simplified (while still retaining the explicit `_:b1` `bf:Title` bnode which shouldn't be necessary) then we get a form that loads but does not show title or the carrier/media/issuance labels:
+
 --> <https://zimeon.github.io/bfe-data/13_instance_simplified.jsonld>
+
+There is no change if the JSON-LD in expanded or compacted:
+
+```
+> jsonld --expand 13_instance_simplified.jsonld > 13_instance_simplified_expanded.jsonld
+Expanded in 0.017915 seconds.
+```
 
 --> <https://zimeon.github.io/bfe-data/13_instance_simplified_expanded.jsonld>
 
+```
+> jsonld --compact 13_instance_simplified.jsonld > 13_instance_simplified_compacted.jsonld
+Compacted in 0.017331 seconds.
+```
+
+--> <https://zimeon.github.io/bfe-data/13_instance_simplified_compacted.jsonld>
+
+although all of these forms differ from `12_instance_tidied.jsonld` in the title, and generate identical ntriples output:
+
+```
+> jsonld --format ntriples 12_instance_tidied.jsonld | sort > 12.nt
+
+Parsed 13 statements in 0.019021 seconds @ 683.4551285421377 statements/second.
+> jsonld --format ntriples 13_instance_simplified.jsonld | sort > 13.nt
+
+Parsed 13 statements in 0.018777 seconds @ 692.336368962028 statements/second.
+> diff 12.nt 13.nt 
+13c13
+< _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "An Instance - Tidied" .
+---
+> _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "An Instance - Simplified" .
+> jsonld --format ntriples 13_instance_simplified_expanded.jsonld | sort > 13ex.nt
+
+Parsed 13 statements in 0.02384 seconds @ 545.3020134228188 statements/second.
+> diff 13.nt 13ex.nt 
+> jsonld --format ntriples 13_instance_simplified_compacted.jsonld | sort > 13cp.nt
+
+Parsed 13 statements in 0.020405 seconds @ 637.0987503062975 statements/second.
+> diff 13.nt 13cp.nt 
+```
+
 ### 14. Over Simplifying
 
+Taking this one step further, 
 --> <https://zimeon.github.io/bfe-data/14_instance_oversimplified.jsonld>
 
 
