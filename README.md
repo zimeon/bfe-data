@@ -136,9 +136,10 @@ Works fine and shows the same data as 11 (modulo title change).
 
 --> <https://zimeon.github.io/bfe-data/13_instance_simplified.jsonld>
 
+--> <https://zimeon.github.io/bfe-data/13_instance_simplified_expanded.jsonld>
+
 ### 14. Over Simplifying
 
 --> <https://zimeon.github.io/bfe-data/14_instance_oversimplified.jsonld>
-
 
 
