@@ -266,9 +266,36 @@ Parsed 13 statements in 0.019161 seconds @ 678.4614581702416 statements/second.
 
 --> <https://zimeon.github.io/bfe-data/14_instance_flattened.jsonld>
 
+When the flattened form is loaded the carrier/media/issuance labels all show fine, but the title is lost and also does not show in the preview output.
+
+If the flattend form is then compacted (to get rid of all the `@value` baggage and extra arrays):
 
 --> <https://zimeon.github.io/bfe-data/14_instance_flattened_compacted.jsonld>
 
-**CONCLUSION OF TESTS 12 and 13 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion or compaction do not solve the issue.**
+then the title _and_ the carrier/media/issuance labels all show fine. The preview output shows:
+
+```
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier;
+    rdfs:label "volume".
+<http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance;
+    rdfs:label "single unit".
+<http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media;
+    rdfs:label "unmediated".
+_:b0_b0 a bf:Instance;
+    bf:carrier <http://id.loc.gov/vocabulary/carriers/nc>;
+    bf:issuance <http://id.loc.gov/vocabulary/issuance/mono>;
+    bf:media <http://id.loc.gov/vocabulary/mediaTypes/n>;
+    bf:title _:b0_b1.
+_:b0_b1 a bf:Title;
+    bf:mainTitle "An Instance - Over-Simplified".
+```
+
+which is correct.
+
+**CONCLUSION OF TESTS 12, 13 and 14 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion, compaction or flattening do not solve the issue. However, it appears that flatten and then compact may be a solution!**
 
 
