@@ -18,6 +18,7 @@
     "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
    },
    "bf:title": {
+    "@id": "_:b1",
     "@type": "bf:Title",
     "bf:mainTitle": "An Instance - Simplified"
    }
