@@ -264,6 +264,11 @@ Parsed 13 statements in 0.019161 seconds @ 678.4614581702416 statements/second.
 > _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "An Instance - Over-Simplified" .
 ```
 
+--> <https://zimeon.github.io/bfe-data/14_instance_flattened.jsonld>
+
+
+--> <https://zimeon.github.io/bfe-data/14_instance_flattened_compacted.jsonld>
+
 **CONCLUSION OF TESTS 12 and 13 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion or compaction do not solve the issue.**
 
 
