@@ -75,9 +75,54 @@ Go to [JSON-LD playground](https://json-ld.org/playground/), load example 3 agai
 
 Again, is loaded fine, show expected data. Preview has normalized form with extra triple.
 
+### 6. Simplification and then flattening
+
+After manual simplification to denormalize (while retaining same bnode names and JSON-LD `@graph` structure) gives:
+`
+--> <https://zimeon.github.io/bfe-data/06_work_simplified.jsonld>
+
+We don't get the title or the label for `text` type, but do see that date. In the preview turtle we see that data has been lost:
+
+```
+:b0_b0 <http://example.org/predicate> "An Object";
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt>;
+    bf:originDate "2018-10-19";
+    bf:title _:b0_b1;
+    a bf:Work.
+```
+
+even though from a JSON-LD point of view it codes for the same triples as `03_work_extra_triple.json`:
+
+```
+> jsonld --format ntriples 03_work_extra_triple.jsonld | sort > 03.nt
+
+Parsed 9 statements in 0.020052 seconds @ 448.8330341113106 statements/second.
+(py3)simeon@RottenApple bfe-data (master %)> jsonld --format ntriples 06_work_simplified.jsonld | sort > 06.nt
+
+Parsed 9 statements in 0.018349 seconds @ 490.4899449561284 statements/second.
+(py3)simeon@RottenApple bfe-data (master %)> diff 03.nt 06.nt 
+9c9
+< _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "The Thing - Extra Data" .
+---
+> _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "The Thing - Simplified" .
+```
+
+If the data is flattened:
+
+```
+> jsonld --flatten 06_work_simplified.jsonld > 06_work_simplified_flattened.jsonld
+Flattened in 0.018733 seconds.
+```
+
+--> <https://zimeon.github.io/bfe-data/06_work_simplified_flattened.jsonld>>
+
+then this form loads correctly, with the same 9 triples showing in tutle preview as `03_work_extra_triple.json`.
+
 ### Conclusions for minimal Work in Monograph profile
 
-From this experiment it seems that BFE does not care about the form of JSON-LD it gets. BFE is also happy to accept and persist extra triples (I tested with just one but assume that carries over for many), but obviously only shows things that a given profile knows about. However, if you go to Preview the extra data is shown in Turtle, JSON-LD and RDF/XML displays.
+From this experiment it seems that BFE does not care some minor changes in the form of JSON-LD it gets, but will not accept various other simplifications. Use of the JSON-LD flatten algorithm appears to make the example in simplified form load again (though not sure how general that is).
+
+BFE is also happy to accept and persist extra triples (I tested with just one but assume that carries over for many), but obviously only shows things that a given profile knows about. However, if you go to Preview the extra data is shown in Turtle, JSON-LD and RDF/XML displays.
 
 During these tests I found the upload to be unreliable. Sometimes I’d try to enter a URL and load, and then nothing would happen (was using Chrome on Mac). Other times it worked fine, so I just retried when it appeared to fail.
 
