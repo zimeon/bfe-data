@@ -6,7 +6,7 @@ These notes from <https://github.com/zimeon/bfe-data>.
 
 ### 1. Create test Work
 
-Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Monograph / Work. Entered work title "The Thing", date of work "2018-10-19". Click preview at bottom of page, copy JSON-LD from panel.
+Went to <http://bibframe.org/bfe/index.html> created a new Monograph / Work. Entered work title "The Thing", date of work "2018-10-19". Click preview at bottom of page, copy JSON-LD from panel.
 
 --> <https://zimeon.github.io/bfe-data/01_work_as_exported.jsonld>
 
@@ -79,28 +79,16 @@ Again, is loaded fine, show expected data. Preview has normalized form with extr
 
 From this experiment it seems that BFE does not care about the form of JSON-LD it gets. BFE is also happy to accept and persist extra triples (I tested with just one but assume that carries over for many), but obviously only shows things that a given profile knows about. However, if you go to Preview the extra data is shown in Turtle, JSON-LD and RDF/XML displays.
 
-During these tests I found the UI to be flakey — sometimes I’d try to enter a URL and load, and then nothing would happen (was using Chrome on Mac). Other times it worked fine so I just retried when it appeared to fail.
+During these tests I found the upload to be unreliable. Sometimes I’d try to enter a URL and load, and then nothing would happen (was using Chrome on Mac). Other times it worked fine, so I just retried when it appeared to fail.
 
 ## Minimal Instance with Monograph profile
 
 ### 11. Create test minimal Instance
 
-Went to <http://bibframe.org/bibliomata/bfe/development.html> created a new Monograph / Instance. Entered instance title "An Instance". Click preview at bottom of page, copy JSON-LD from panel.
+Went to <http://bibframe.org/bfe/index.html> created a new Monograph / Instance. Entered instance title "An Instance". Click preview at bottom of page, copy JSON-LD from panel.
 
 --> <https://zimeon.github.io/bfe-data/11_instance.jsonld>
 
-Attempting to load this in the "Load IBC" does not seem to work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded. Javascript console shows:
+2018-10-19 -- Attempting to load this in the "Load IBC" did not work. In both Chrome and Firefox the browser seems to hang for some time after clicking "Submit URL", and eventually becomes response agiain on the same load page. No data gets loaded. @kirkhess resolved an issue with expectations of `instanceOf` to fix this.
 
-```
-VM71:1 GET http://bibframe.org/bibliomata/profile-edit/server/retrieveLDS?uri=https%3A%2F%2Fzimeon.github.io%2Fbfe-data%2F11_instance.jsonld 503 (Service Unavailable)
-(anonymous) @ VM71:1
-send @ jquery.min.js:4
-ajax @ jquery.min.js:4
-exports.retrieveLDS @ bfe.js:5510
-(anonymous) @ bfe.js:931
-dispatch @ jquery.min.js:3
-r.handle @ jquery.min.js:3
-bfe.js:4362 bibliomata/bfe/builds/bfe.js:5528 -> FAILED to load external source: http://bibframe.org/bibliomata/profile-edit/server/retrieveLDS
-bfe.js:4362 bibliomata/bfe/builds/bfe.js:5529 -> Request status: error; Error msg: Service Unavailable
-```
-
+Now this loads fine and shows the Instance 

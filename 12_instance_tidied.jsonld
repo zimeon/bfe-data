@@ -1,24 +1,21 @@
 {
  "@context": {
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-  "bf": "http://id.loc.gov/ontologies/bibframe/"
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "bf": "http://id.loc.gov/ontologies/bibframe/",
+  "bflc": "http://id.loc.gov/ontologies/bflc/",
+  "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
+  "pmo": "http://performedmusicontology.org/ontology/"
  },
  "@graph": [
   {
    "@id": "_:b0",
    "@type": "bf:Instance",
-   "bf:carrier": {
-    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
-   },
-   "bf:issuance": {
-    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
-   },
-   "bf:media": {
-    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
-   },
-   "bf:title": {
-    "@id": "_:b1"
-   }
+   "bf:carrier": "http://id.loc.gov/vocabulary/carriers/nc",
+   "bf:issuance": "http://id.loc.gov/vocabulary/issuance/mono",
+   "bf:media": "http://id.loc.gov/vocabulary/mediaTypes/n",
+   "bf:title": "_:b1"
   },
   {
    "@id": "http://id.loc.gov/vocabulary/issuance/mono",
@@ -38,7 +35,7 @@
   {
    "@id": "_:b1",
    "@type": "bf:Title",
-   "bf:mainTitle": "An Instance"
+   "bf:mainTitle": "An Instance - Tidied"
   }
  ]
 }
