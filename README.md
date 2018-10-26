@@ -1,11 +1,21 @@
 # Exploring BFE data import
 
-These notes from <https://github.com/zimeon/bfe-data>, nice form at <https://zimeon.github.io/bfe-data/>.
+These notes from <https://github.com/zimeon/bfe-data>, nicely displayed version at <https://zimeon.github.io/bfe-data/>.
 
-Resources:
+## Conclusions - 2018-10-26
+
+  1. BFE will not correctly load arbitrary JSON-LD representations for a given set of triples. It appears that applying the **flatten** and then **compact** algorithms will result in JSON-LD that can be loaded without dropping triples.
+  2. Unless it conflicts with patterns used to distinguish Works and Instances, BFE will load and preserve arbitrary additional data beyond that supported for display and edit via the selected profile.
+  3. BFE will load instance data only from a URL that includes the string "instance" ([BFE code](https://github.com/lcnetdev/bfe/blob/3cf954494e1fcd77762e77ffe405d182f41320a1/src/bfe.js#L760-L763)) -- this could very easily be changed.
+
+Gory details below.
+
+## Resources
 
   * the LC BFE instance is at <http://bibframe.org/bfe/index.html>
-  * the `jsonld` command-line tool is part of <https://github.com/ruby-rdf/json-ld>.
+  * the `jsonld` command-line tool is part of <https://github.com/ruby-rdf/json-ld>
+  * the `rapper` command-line tool from <http://librdf.org/raptor/rapper.html>
+  * the `rdfdiffb.py` command-lins tool from <https://github.com/zimeon/rdiffb>
 
 ## Minimal Work in Monograph profile
 
@@ -461,3 +471,6 @@ Graphs 30_work_extra_data.nt and 33_work_extra_data_preview.nt are isomorphic
 ```
 
 So, another data point suggesting that flatten and compact works to make JSON-LD readable by BFE without dropping triples.
+
+
+
