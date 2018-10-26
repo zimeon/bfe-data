@@ -2,15 +2,20 @@
 
 These notes from <https://github.com/zimeon/bfe-data>, nice form at <https://zimeon.github.io/bfe-data/>.
 
+Resources:
+
+  * the LC BFE instance is at <http://bibframe.org/bfe/index.html>
+  * the `jsonld` command-line tool is part of <https://github.com/ruby-rdf/json-ld>.
+
 ## Minimal Work in Monograph profile
 
 ### 1. Create test Work
 
-Went to <http://bibframe.org/bfe/index.html> created a new Monograph / Work. Entered work title "The Thing", date of work "2018-10-19". Click preview at bottom of page, copy JSON-LD from panel.
+Went to [BFE](http://bibframe.org/bfe/index.html) created a new Monograph / Work. Entered work title "The Thing", date of work "2018-10-19". Click preview at bottom of page, copy JSON-LD from panel.
 
 --> <https://zimeon.github.io/bfe-data/01_work_as_exported.jsonld>
 
-Starting [BFE](http://bibframe.org/bibliomata/bfe/development.html) again, Load Work, enter URL `https://zimeon.github.io/bfe-data/01_work_as_exported.jsonld` then click Submit URL. Goes to editor page with title and date shown.
+Starting [BFE](http://bibframe.org/bfe/index.html) again, Load Work, enter URL `https://zimeon.github.io/bfe-data/01_work_as_exported.jsonld` then click Submit URL. Goes to editor page with title and date shown.
 
 ### 2. Tidy the data
 
@@ -118,9 +123,9 @@ Flattened in 0.018733 seconds.
 
 then this form loads correctly, with the same 9 triples showing in tutle preview as `03_work_extra_triple.json`.
 
-### Conclusions for minimal Work in Monograph profile
+### Conclusions for minimal Work tests in Monograph profile
 
-From this experiment it seems that BFE does not care some minor changes in the form of JSON-LD it gets, but will not accept various other simplifications. Use of the JSON-LD flatten algorithm appears to make the example in simplified form load again (though not sure how general that is).
+From this experiment it seems that BFE does not care about some minor changes in the form of JSON-LD it gets, but will not accept various other simplifications. Use of the JSON-LD flatten algorithm appears to make the example in simplified form load again (though not sure how general that is).
 
 BFE is also happy to accept and persist extra triples (I tested with just one but assume that carries over for many), but obviously only shows things that a given profile knows about. However, if you go to Preview the extra data is shown in Turtle, JSON-LD and RDF/XML displays.
 
@@ -130,7 +135,7 @@ During these tests I found the upload to be unreliable. Sometimes I’d try to e
 
 ### 11. Create test minimal Instance
 
-Went to <http://bibframe.org/bfe/index.html> created a new Monograph / Instance. Entered instance title "An Instance". Click preview at bottom of page, copy JSON-LD from panel.
+Went to [BFE](http://bibframe.org/bfe/index.html) created a new Monograph / Instance. Entered instance title "An Instance". Click preview at bottom of page, copy JSON-LD from panel.
 
 --> <https://zimeon.github.io/bfe-data/11_instance.jsonld>
 
@@ -296,6 +301,27 @@ _:b0_b1 a bf:Title;
 
 which is correct.
 
-**CONCLUSION OF TESTS 12, 13 and 14 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion, compaction or flattening do not solve the issue. However, it appears that flatten and then compact may be a solution!**
+### Conclusions for minimal Instance tests in Monograph profile
 
+**Based on the results of tests 12, 13 and 14 -- BFE is critically sensitive to the form of the JSON-LD supplied. Straightforward expansion, compaction or flattening do not solve the issue. However, it appears that flatten and then compact may be a solution!**
 
+## More complex instance data
+
+Load IBC -- LCCN -- 22010771
+
+```
+> rapper --input turtle --output ntriples 20_two_gun_sue.ttl | sort > 21_two_gun_sue.nt 
+rapper: Parsing URI file:///Users/simeon/src/bfe-data/20_two_gun_sue.ttl with parser turtle
+rapper: Serializing with serializer ntriples
+rapper: Parsing returned 161 triples
+> jsonld --input-format turtle --compact 20_two_gun_sue.ttl > /tmp/a
+Compacted in 0.011164 seconds.
+> jsonld --flatten /tmp/a > /tmp/b
+Flattened in 0.023556 seconds.
+> jsonld --compact /tmp/b > 22_two_gun_sue_flat_expand.jsonld
+Compacted in 0.030836 seconds.
+> jsonld --format ntriples 22_two_gun_sue_flat_expand.jsonld | sort > 23_two_gun_sue_flat_expand.nt
+Parsed 161 statements in 0.057687 seconds @ 2790.923431622376 statements/second.
+> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_flat_expand.nt 
+Graphs 21_two_gun_sue.nt and 23_two_gun_sue_flat_expand.nt are isomorphic
+```
