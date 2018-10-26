@@ -1,0 +1,459 @@
+{
+ "@context": {
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "bf": "http://id.loc.gov/ontologies/bibframe/",
+  "bflc": "http://id.loc.gov/ontologies/bflc/",
+  "madsrdf": "http://www.loc.gov/mads/rdf/v1#",
+  "pmo": "http://performedmusicontology.org/ontology/"
+ },
+ "@graph": [
+  {
+   "@id": "_:bnode6752ef7b16524166b0ca0d15e5a7a93e",
+   "@type": "bflc:PrimaryContribution",
+   "bf:agent": {
+    "@id": "http://id.loc.gov/authorities/names/n85323845"
+   },
+   "bf:role": {
+    "@id": "http://id.loc.gov/vocabulary/relators/ctb"
+   }
+  },
+  {
+   "@id": "_:bnode8941c6e7547744bf9737b5657a9f517d",
+   "@type": "bf:GenerationProcess",
+   "rdfs:label": "DLC marc2bibframe2 v1.3.2: 2018-10-26T16:16:08-04:00"
+  },
+  {
+   "@id": "_:bnode4a399c43543a40df950d5ccb7526cf8f",
+   "@type": [
+    "bf:Publication",
+    "bf:ProvisionActivity"
+   ],
+   "bf:agent": {
+    "@id": "_:bnode61a3c738041c4512b003e33f869f1a6f"
+   },
+   "bf:date": "1922",
+   "bf:place": {
+    "@id": "_:bnoded113125ef311407e870713f02dd8a0dc"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/organizations/dlc",
+   "@type": "bf:Source"
+  },
+  {
+   "@id": "_:bnode585e16ae8e8e47448322b5e9ac3236f5",
+   "@type": "bf:AdminMetadata",
+   "bflc:encodingLevel": {
+    "@id": "_:bnode846f2b3da72d4927ac3c1add6f85c8e7"
+   },
+   "bf:changeDate": "2017-09-28T12:11:18",
+   "bf:creationDate": "1983-12-16",
+   "bf:descriptionConventions": {
+    "@id": "_:bnodeb66bd377b86049d18c8fed62982836bd"
+   },
+   "bf:descriptionModifier": [
+    {
+     "@id": "_:bnode6a54bb7de3f74501b2d025ce8c4df867"
+    },
+    {
+     "@id": "_:bnode1e9f8948e91f4e8fa12d3d35cf9859f4"
+    }
+   ],
+   "bf:generationProcess": {
+    "@id": "_:bnode8941c6e7547744bf9737b5657a9f517d"
+   },
+   "bf:identifiedBy": {
+    "@id": "_:bnode2d21e78a5ef4460e93968dea7b6763be"
+   },
+   "bf:source": [
+    {
+     "@id": "_:bnode65d5d8784a99450c996f4a01c943be8a"
+    },
+    {
+     "@id": "_:bnodeba81ec3d07d14024886587b9f7614425"
+    }
+   ],
+   "bf:status": {
+    "@id": "_:bnode9846f0db4f0e4d48be9c242dcc798228"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/authorities/names/n85323845",
+   "@type": [
+    "bf:Agent",
+    "madsrdf:PersonalName"
+   ],
+   "bflc:name00MarcKey": "1001 $aGrant, Douglas,$d1883-1924.",
+   "bflc:name00MatchKey": "Grant, Douglas, 1883-1924.",
+   "bflc:primaryContributorName00MatchKey": "Grant, Douglas, 1883-1924.",
+   "rdfs:label": "Grant, Douglas, 1883-1924."
+  },
+  {
+   "@id": "_:bnode9846f0db4f0e4d48be9c242dcc798228",
+   "@type": "bf:Status",
+   "bf:code": "c"
+  },
+  {
+   "@id": "_:bnode65d5d8784a99450c996f4a01c943be8a",
+   "@type": [
+    "bf:Source",
+    "bf:Agent"
+   ],
+   "rdfs:label": "OU"
+  },
+  {
+   "@id": "_:bnodeca1ddd20fc364bf69952de9883b90450",
+   "@type": "bf:Contribution",
+   "bf:agent": {
+    "@id": "http://id.loc.gov/authorities/names/no98083416"
+   },
+   "bf:role": {
+    "@id": "http://id.loc.gov/vocabulary/relators/pbl"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/resources/items/c0077883560001",
+   "@type": [
+    "bf:Item",
+    "bf:Item"
+   ],
+   "bf:electronicLocator": {
+    "@id": "http://hdl.loc.gov/loc.gdc/scd0001.00021637324"
+   },
+   "bf:itemOf": [
+    {
+     "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+    },
+    {
+     "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+    }
+   ],
+   "bf:shelfMark": {
+    "@id": "_:bnode37f6b342923f421d81578611ad86e60b"
+   }
+  },
+  {
+   "@id": "_:bnode6a54bb7de3f74501b2d025ce8c4df867",
+   "@type": "bf:Agent",
+   "rdfs:label": "OU"
+  },
+  {
+   "@id": "_:bnodebcbfeef89338439ba50d6b977b45b792",
+   "@type": "bf:Title",
+   "bflc:titleSortKey": "Two-gun Sue /",
+   "bf:mainTitle": "Two-gun Sue",
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "_:bnode5e03669a07354f8f8d891d7e8bee62e6",
+   "@type": "bf:Note",
+   "rdfs:label": "Verso of t.p.: Published, 1922."
+  },
+  {
+   "@id": "_:bnodeb3468608d16f4b5382324a38b2fccae9",
+   "@type": "bf:Title",
+   "bflc:titleSortKey": "Two-gun Sue /",
+   "bf:mainTitle": "Two-gun Sue",
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/languages/eng",
+   "@type": "bf:Language"
+  },
+  {
+   "@id": "_:bnode293ed919dfae42bcad8a033d5dfd1b9c",
+   "@type": "bf:Source",
+   "bf:code": "gsafd"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/relators/ctb",
+   "@type": "bf:Role"
+  },
+  {
+   "@id": "http://id.loc.gov/authorities/names/no98083416",
+   "@type": [
+    "bf:Agent",
+    "madsrdf:CorporateName"
+   ],
+   "bflc:name10MarcKey": "7102 $aRobert M. McBride & Company,$epublisher.",
+   "bflc:name10MatchKey": "Robert M. McBride & Company,",
+   "rdfs:label": "Robert M. McBride & Company,"
+  },
+  {
+   "@id": "_:bnodeb66bd377b86049d18c8fed62982836bd",
+   "@type": "bf:DescriptionConventions",
+   "bf:code": "aacr"
+  },
+  {
+   "@id": "http://id.loc.gov/resources/instances/c0077883560001",
+   "@type": [
+    "bf:Instance",
+    "bf:Electronic"
+   ],
+   "bf:carrier": {
+    "@id": "http://id.loc.gov/vocabulary/carriers/nc"
+   },
+   "bf:dimensions": "20 cm.",
+   "bf:extent": {
+    "@id": "_:bnode81470eebc0e940cfbce7d84c1edfcce5"
+   },
+   "bf:hasItem": {
+    "@id": "http://id.loc.gov/resources/items/c0077883560001"
+   },
+   "bf:identifiedBy": [
+    {
+     "@id": "_:bnode2cab721d820b4c6595496bb329c02d1a"
+    },
+    {
+     "@id": "_:bnode13b3549640e84e539db05f3ad8f38bd9"
+    }
+   ],
+   "bf:instanceOf": {
+    "@id": "http://id.loc.gov/resources/works/c007788356"
+   },
+   "bf:issuance": {
+    "@id": "http://id.loc.gov/vocabulary/issuance/mono"
+   },
+   "bf:media": {
+    "@id": "http://id.loc.gov/vocabulary/mediaTypes/n"
+   },
+   "bf:note": [
+    {
+     "@id": "_:bnode981f18c1c94f4c01be4e85a86099cb15"
+    },
+    {
+     "@id": "_:bnoded01cff86b48e4da9aa8132a0e1e5a442"
+    },
+    {
+     "@id": "_:bnode5e03669a07354f8f8d891d7e8bee62e6"
+    }
+   ],
+   "bf:otherPhysicalFormat": {
+    "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+   },
+   "bf:provisionActivity": [
+    {
+     "@id": "_:bnode4a399c43543a40df950d5ccb7526cf8f"
+    },
+    {
+     "@id": "_:bnode9258b46cc9c74bcbb02d02becbb5dfa1"
+    }
+   ],
+   "bf:provisionActivityStatement": "New York : Robert M. McBride & Company, 1922.",
+   "bf:responsibilityStatement": "by Douglas Grant",
+   "bf:title": [
+    {
+     "@id": "_:bnodec0d972e15a7b4e0cbf523a6775075f7b"
+    },
+    {
+     "@id": "_:bnodebcbfeef89338439ba50d6b977b45b792"
+    },
+    {
+     "@id": "_:bnodeb3468608d16f4b5382324a38b2fccae9"
+    }
+   ],
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "_:bnoded113125ef311407e870713f02dd8a0dc",
+   "@type": "bf:Place",
+   "rdfs:label": "New York"
+  },
+  {
+   "@id": "_:bnode13b3549640e84e539db05f3ad8f38bd9",
+   "@type": "bf:Lccn",
+   "rdf:value": "   22010771 "
+  },
+  {
+   "@id": "_:bnode9258b46cc9c74bcbb02d02becbb5dfa1",
+   "@type": [
+    "bf:ProvisionActivity",
+    "bf:Publication"
+   ],
+   "bf:date": "1922",
+   "bf:place": {
+    "@id": "http://id.loc.gov/vocabulary/countries/nyu"
+   }
+  },
+  {
+   "@id": "_:bnode37f6b342923f421d81578611ad86e60b",
+   "@type": "bf:ShelfMarkLcc",
+   "bf:source": {
+    "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+   },
+   "rdfs:label": "PZ3.O85 Two"
+  },
+  {
+   "@id": "_:bnode0e9a3e1094d9428eaa2a688d6b50831f",
+   "@type": "bf:Title",
+   "bflc:titleSortKey": "Two-gun Sue /",
+   "bf:mainTitle": "Two-gun Sue",
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "_:bnode4d1dcb918aa649c9b38730c1d24cf27a",
+   "@type": "bf:ClassificationLcc",
+   "bf:classificationPortion": "PS3529.S75",
+   "bf:source": {
+    "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+   }
+  },
+  {
+   "@id": "_:bnodeba81ec3d07d14024886587b9f7614425",
+   "@type": [
+    "bf:Source",
+    "bf:Agent"
+   ],
+   "rdfs:label": "DLC"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/issuance/mono",
+   "@type": "bf:Issuance"
+  },
+  {
+   "@id": "_:bnodec0d972e15a7b4e0cbf523a6775075f7b",
+   "@type": "bf:Title",
+   "bflc:titleSortKey": "Two-gun Sue /",
+   "bf:mainTitle": "Two-gun Sue",
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "_:bnode6ac40a40624747adbd44171df429ad02",
+   "@type": "bf:ClassificationLcc",
+   "bf:classificationPortion": "PZ3.O85",
+   "bf:itemPortion": "Two",
+   "bf:source": {
+    "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+   }
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/countries/nyu",
+   "@type": "bf:Place"
+  },
+  {
+   "@id": "_:bnode69064183584445a991d86c62226a848c",
+   "@type": "bf:Source",
+   "rdfs:label": "OCoLC"
+  },
+  {
+   "@id": "http://id.loc.gov/authorities/subjects/sh85037260",
+   "@type": [
+    "madsrdf:GenreForm",
+    "bf:GenreForm"
+   ],
+   "bf:source": {
+    "@id": "_:bnode293ed919dfae42bcad8a033d5dfd1b9c"
+   },
+   "madsrdf:authoritativeLabel": "Detective and mystery stories.",
+   "rdfs:label": "Detective and mystery stories."
+  },
+  {
+   "@id": "_:bnode981f18c1c94f4c01be4e85a86099cb15",
+   "@type": "bf:Note",
+   "rdfs:label": "Also available in digital form"
+  },
+  {
+   "@id": "_:bnode2d21e78a5ef4460e93968dea7b6763be",
+   "@type": "bf:Local",
+   "bf:source": {
+    "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+   },
+   "rdf:value": "7788356"
+  },
+  {
+   "@id": "_:bnoded01cff86b48e4da9aa8132a0e1e5a442",
+   "@type": "bf:Note",
+   "rdfs:label": "Blue cloth stamped in gilt."
+  },
+  {
+   "@id": "http://id.loc.gov/resources/works/c007788356",
+   "@type": "bf:Work",
+   "bf:adminMetadata": {
+    "@id": "_:bnode585e16ae8e8e47448322b5e9ac3236f5"
+   },
+   "bf:classification": [
+    {
+     "@id": "_:bnode6ac40a40624747adbd44171df429ad02"
+    },
+    {
+     "@id": "_:bnode4d1dcb918aa649c9b38730c1d24cf27a"
+    }
+   ],
+   "bf:contribution": [
+    {
+     "@id": "_:bnode6752ef7b16524166b0ca0d15e5a7a93e"
+    },
+    {
+     "@id": "_:bnodeca1ddd20fc364bf69952de9883b90450"
+    }
+   ],
+   "bf:genreForm": {
+    "@id": "http://id.loc.gov/authorities/subjects/sh85037260"
+   },
+   "bf:hasInstance": [
+    {
+     "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+    },
+    {
+     "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+    },
+    {
+     "@id": "http://id.loc.gov/resources/instances/c0077883560001"
+    }
+   ],
+   "bf:language": {
+    "@id": "http://id.loc.gov/vocabulary/languages/eng"
+   },
+   "bf:title": {
+    "@id": "_:bnode0e9a3e1094d9428eaa2a688d6b50831f"
+   },
+   "rdfs:label": "Two-gun Sue /"
+  },
+  {
+   "@id": "_:bnode846f2b3da72d4927ac3c1add6f85c8e7",
+   "@type": "bflc:EncodingLevel",
+   "bf:code": "1"
+  },
+  {
+   "@id": "_:bnode2cab721d820b4c6595496bb329c02d1a",
+   "@type": "bf:Local",
+   "bf:source": {
+    "@id": "_:bnode69064183584445a991d86c62226a848c"
+   },
+   "rdf:value": "10225427"
+  },
+  {
+   "@id": "_:bnode1e9f8948e91f4e8fa12d3d35cf9859f4",
+   "@type": "bf:Agent",
+   "rdfs:label": "DLC"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/relators/pbl",
+   "@type": "bf:Role",
+   "bflc:relatorMatchKey": "publisher",
+   "rdfs:label": "publisher."
+  },
+  {
+   "@id": "_:bnode81470eebc0e940cfbce7d84c1edfcce5",
+   "@type": "bf:Extent",
+   "rdfs:label": "[4], 316 p."
+  },
+  {
+   "@id": "_:bnode61a3c738041c4512b003e33f869f1a6f",
+   "@type": "bf:Agent",
+   "rdfs:label": "Robert M. McBride & Company"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/mediaTypes/n",
+   "@type": "bf:Media",
+   "rdfs:label": "unmediated"
+  },
+  {
+   "@id": "http://id.loc.gov/vocabulary/carriers/nc",
+   "@type": "bf:Carrier",
+   "rdfs:label": "volume"
+  }
+ ]
+}
