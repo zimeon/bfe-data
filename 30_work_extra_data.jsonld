@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "bf": "http://id.loc.gov/ontologies/bibframe/",
+    "ex": "http://example.org/"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "bf:Work",
+      "ex:p1": "An Object",
+      "ex:p2": {
+        "@id": "ex:e2",
+        "ex:p3": {
+          "@id": "ex:e3",
+          "ex:p4": {
+            "@id": "ex:e4"
+          },
+          "ex:p5": {
+            "@id": "ex:e5"
+          },
+          "ex:p6": {
+            "@id": "ex:e6"
+          }
+        }
+      },
+      "bf:content": {
+        "@id": "http://id.loc.gov/vocabulary/contentTypes/txt",
+        "@type": "bf:Content",
+        "rdfs:label": "texty"
+      },
+      "bf:originDate": "2018-10-26",
+      "bf:title": {
+        "@id": "_:b1",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Thing With Extra Data"
+      }
+    }
+  ]
+}

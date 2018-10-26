@@ -51,7 +51,7 @@ Same procedure, Load Work from <https://zimeon.github.io/bfe-data/02_work_tidied
 ### 3. Add extra data on the Work
 
 ```
-> diff 02_work_tidied.jsonld 03_work_extra_triple.json
+> diff 02_work_tidied.jsonld 03_work_extra_triple.jsonld
 14a15
 >    "http://example.org/predicate": "An Object",
 31c32
