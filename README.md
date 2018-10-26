@@ -325,9 +325,19 @@ Attempting to load as a work does complete but seems to just pick out 4 of the 1
     rdfs:label "text".
 ```
 
-## 21, 22, 23. Manipulation of this instance
+**It seems from the [BFE code](https://github.com/lcnetdev/bfe/blob/3cf954494e1fcd77762e77ffe405d182f41320a1/src/bfe.js#L760-L763) that the URI being loaded must contain the string "instance"**
 
-... have played with the below but all pointless as BFE won't load <https://zimeon.github.io/bfe-data/20_two_gun_sue.jsonld>
+```
+> cp 20_two_gun_sue.jsonld 20_two_gun_sue_instance.jsonld
+```
+
+--> <https://zimeon.github.io/bfe-data/20_two_gun_sue_instance.jsonld>
+
+This loads OK!
+
+### 21, 22, 23. Manipulation of this instance
+
+Let's see whether we can generate a loadable version of this data from the Turtle output:
 
 ```
 > rapper --input turtle --output ntriples 20_two_gun_sue.ttl | sort > 21_two_gun_sue.nt 
@@ -338,10 +348,106 @@ rapper: Parsing returned 161 triples
 Compacted in 0.011164 seconds.
 > jsonld --flatten /tmp/a > /tmp/b
 Flattened in 0.023556 seconds.
-> jsonld --compact /tmp/b > 22_two_gun_sue_flat_compact.jsonld
+> jsonld --compact /tmp/b > 22_two_gun_sue_instance_flat_compact.jsonld
 Compacted in 0.030836 seconds.
-> jsonld --format ntriples 22_two_gun_sue_flat_compact.jsonld | sort > 23_two_gun_sue_flat_compact.nt
+> jsonld --format ntriples 22_two_gun_sue_instance_flat_compact.jsonld | sort > 23_two_gun_sue_instance_flat_compact.nt
 Parsed 161 statements in 0.057687 seconds @ 2790.923431622376 statements/second.
-> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_flat_compact.nt 
-Graphs 21_two_gun_sue.nt and 23_two_gun_sue_flat_compact.nt are isomorphic
+> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_instance_flat_compact.nt 
+Graphs 21_two_gun_sue.nt and 23_two_gun_sue_instance_flat_compact.nt are isomorphic
 ```
+
+--> <https://zimeon.github.io/bfe-data/22_two_gun_sue_instance_flat_compact.jsonld>
+
+## Synthetic extra data
+
+### 30. Extra data with structure
+
+Added extra data into JSON-LD from <https://zimeon.github.io/bfe-data/03_work_extra_triple.jsonld>:
+
+```
+...
+  "ex": "http://example.org/"
+...
+    "ex:p1": "An Object",
+      "ex:p2": {
+        "@id": "ex:e2",
+        "ex:p3": {
+          "@id": "ex:e3",
+          "ex:p4": {
+            "@id": "ex:e4"
+          },
+          "ex:p5": {
+            "@id": "ex:e5"
+          },
+          "ex:p6": {
+            "@id": "ex:e6"
+          }
+        }
+      },
+```
+
+--> <https://zimeon.github.io/bfe-data/30_work_extra_data.jsonld>
+
+This form has too much structure so BFE ignores most of it if one attempts to load, it ends up with just 6 of the 14 triples.
+
+### 31, 32. Flatten and compact...
+
+```
+> jsonld --flatten 30_work_extra_data.jsonld > 31_work_extra_data_flattened.jsonld
+Flattened in 0.017845 seconds.
+> jsonld --compact 31_work_extra_data_flattened.jsonld > 32_work_extra_data_flattened_compacted.jsonld
+Compacted in 0.017255 seconds.
+```
+
+verify same # triples:
+
+```
+> jsonld --format ntriples 32_work_extra_data_flattened_compacted.jsonld > /dev/null 
+
+Parsed 14 statements in 0.018918 seconds @ 740.0359446030235 statements/second.
+> jsonld --format ntriples 30_work_extra_data.jsonld > /dev/null
+
+Parsed 14 statements in 0.020199 seconds @ 693.1036189910391 statements/second.
+```
+
+--> <https://zimeon.github.io/bfe-data/32_work_extra_data_flattened_compacted.jsonld>
+
+And this flattened compacted version loads fine into BFE, preview shows data
+
+### 33. Check preview in BFE
+
+Copy Turtle from BFE after loading <https://zimeon.github.io/bfe-data/32_work_extra_data_flattened_compacted.jsonld>, save as <https://zimeon.github.io/bfe-data/33_work_extra_data_preview.nt> but do string sub to get rid of `_` in bnode names:
+
+```
+> sub.pl :b1_ : 33_work_extra_data_preview.nt 
+33_work_extra_data_preview.nt
+7,14c7,14
+< _:b1_b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+< _:b1_b0 <http://example.org/p1> "An Object" .
+< _:b1_b0 <http://example.org/p2> <http://example.org/e2> .
+< _:b1_b0 <http://id.loc.gov/ontologies/bibframe/content> <http://id.loc.gov/vocabulary/contentTypes/txt> .
+< _:b1_b0 <http://id.loc.gov/ontologies/bibframe/originDate> "2018-10-26" .
+< _:b1_b0 <http://id.loc.gov/ontologies/bibframe/title> _:b1_b1 .
+< _:b1_b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+< _:b1_b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Thing With Extra Data" .
+---
+> _:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+> _:b0 <http://example.org/p1> "An Object" .
+> _:b0 <http://example.org/p2> <http://example.org/e2> .
+> _:b0 <http://id.loc.gov/ontologies/bibframe/content> <http://id.loc.gov/vocabulary/contentTypes/txt> .
+> _:b0 <http://id.loc.gov/ontologies/bibframe/originDate> "2018-10-26" .
+> _:b0 <http://id.loc.gov/ontologies/bibframe/title> _:b1 .
+> _:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+> _:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Thing With Extra Data" .
+
+Accept changes [y|N]?y
+Changes accepted
+
+> jsonld --format ntriples 30_work_extra_data.jsonld > 30_work_extra_data.nt
+Parsed 14 statements in 0.019604 seconds @ 714.1399714344011 statements/second.
+
+> rdfdiffb.py -s 30_work_extra_data.nt 33_work_extra_data_preview.nt
+Graphs 30_work_extra_data.nt and 33_work_extra_data_preview.nt are isomorphic
+```
+
+So, another data point suggesting that flatten and compact works to make JSON-LD readable by BFE without dropping triples.

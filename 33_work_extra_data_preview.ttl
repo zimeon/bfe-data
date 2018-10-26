@@ -1,0 +1,22 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/>.
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix pmo: <http://performedmusicontology.org/ontology/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.org/e2> <http://example.org/p3> <http://example.org/e3>.
+<http://example.org/e3> <http://example.org/p4> <http://example.org/e4>;
+    <http://example.org/p5> <http://example.org/e5>;
+    <http://example.org/p6> <http://example.org/e6>.
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content;
+    rdfs:label "texty".
+_:b1_b0 a bf:Work;
+    <http://example.org/p1> "An Object";
+    <http://example.org/p2> <http://example.org/e2>;
+    bf:content <http://id.loc.gov/vocabulary/contentTypes/txt>;
+    bf:originDate "2018-10-26";
+    bf:title _:b1_b1.
+_:b1_b1 a bf:Title;
+    bf:mainTitle "Thing With Extra Data".

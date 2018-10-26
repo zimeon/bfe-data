@@ -1,0 +1,14 @@
+<http://example.org/e2> <http://example.org/p3> <http://example.org/e3> .
+<http://example.org/e3> <http://example.org/p4> <http://example.org/e4> .
+<http://example.org/e3> <http://example.org/p5> <http://example.org/e5> .
+<http://example.org/e3> <http://example.org/p6> <http://example.org/e6> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Content> .
+<http://id.loc.gov/vocabulary/contentTypes/txt> <http://www.w3.org/2000/01/rdf-schema#label> "texty" .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+_:b0 <http://example.org/p1> "An Object" .
+_:b0 <http://example.org/p2> <http://example.org/e2> .
+_:b0 <http://id.loc.gov/ontologies/bibframe/content> <http://id.loc.gov/vocabulary/contentTypes/txt> .
+_:b0 <http://id.loc.gov/ontologies/bibframe/originDate> "2018-10-26" .
+_:b0 <http://id.loc.gov/ontologies/bibframe/title> _:b1 .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Thing With Extra Data" .
