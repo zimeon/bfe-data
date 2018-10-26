@@ -333,7 +333,9 @@ Attempting to load as a work does complete but seems to just pick out 4 of the 1
 
 --> <https://zimeon.github.io/bfe-data/20_two_gun_sue_instance.jsonld>
 
-This loads OK!
+This loads OK! Save the preview Turtle output:
+
+--> <https://zimeon.github.io/bfe-data/20_two_gun_sue_instance_preview.ttl>
 
 ### 21, 22, 23. Manipulation of this instance
 

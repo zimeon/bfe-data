@@ -2,56 +2,6 @@
   "@graph": [
     {
       "@id": "_:b0",
-      "@type": [
-        "http://id.loc.gov/ontologies/bibframe/Publication",
-        "http://id.loc.gov/ontologies/bibframe/ProvisionActivity"
-      ],
-      "http://id.loc.gov/ontologies/bibframe/agent": {
-        "@id": "_:b1"
-      },
-      "http://id.loc.gov/ontologies/bibframe/date": "1922",
-      "http://id.loc.gov/ontologies/bibframe/place": {
-        "@id": "_:b2"
-      }
-    },
-    {
-      "@id": "_:b1",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Agent",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Robert M. McBride & Company"
-    },
-    {
-      "@id": "_:b10",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Also available in digital form"
-    },
-    {
-      "@id": "_:b11",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Verso of t.p.: Published, 1922."
-    },
-    {
-      "@id": "_:b12",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
-      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
-      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
-    },
-    {
-      "@id": "_:b13",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
-      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
-      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
-    },
-    {
-      "@id": "_:b14",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
-      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
-      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
-    },
-    {
-      "@id": "_:b15",
       "@type": "http://id.loc.gov/ontologies/bflc/PrimaryContribution",
       "http://id.loc.gov/ontologies/bibframe/agent": {
         "@id": "http://id.loc.gov/authorities/names/n85323845"
@@ -61,90 +11,73 @@
       }
     },
     {
-      "@id": "_:b16",
+      "@id": "_:b1",
+      "@type": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
+      "http://www.w3.org/2000/01/rdf-schema#label": "DLC marc2bibframe2 v1.3.2: 2018-10-26T16:16:08-04:00"
+    },
+    {
+      "@id": "_:b10",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
+      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
+      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
+    },
+    {
+      "@id": "_:b11",
       "@type": "http://id.loc.gov/ontologies/bibframe/Source",
       "http://id.loc.gov/ontologies/bibframe/code": "gsafd"
     },
     {
-      "@id": "_:b17",
-      "@type": "http://id.loc.gov/ontologies/bflc/EncodingLevel",
-      "http://id.loc.gov/ontologies/bibframe/code": "1"
+      "@id": "_:b12",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Publication",
+      "http://id.loc.gov/ontologies/bibframe/agent": {
+        "@id": "_:b13"
+      },
+      "http://id.loc.gov/ontologies/bibframe/date": "1922",
+      "http://id.loc.gov/ontologies/bibframe/place": {
+        "@id": "_:b14"
+      }
     },
     {
-      "@id": "_:b18",
+      "@id": "_:b13",
       "@type": "http://id.loc.gov/ontologies/bibframe/Agent",
-      "http://www.w3.org/2000/01/rdf-schema#label": "OU"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Robert M. McBride & Company"
     },
     {
-      "@id": "_:b19",
-      "@type": [
-        "http://id.loc.gov/ontologies/bibframe/Source",
-        "http://id.loc.gov/ontologies/bibframe/Agent"
-      ],
-      "http://www.w3.org/2000/01/rdf-schema#label": "OU"
-    },
-    {
-      "@id": "_:b2",
+      "@id": "_:b14",
       "@type": "http://id.loc.gov/ontologies/bibframe/Place",
       "http://www.w3.org/2000/01/rdf-schema#label": "New York"
     },
     {
-      "@id": "_:b20",
-      "@type": [
-        "http://id.loc.gov/ontologies/bibframe/Source",
-        "http://id.loc.gov/ontologies/bibframe/Agent"
-      ],
-      "http://www.w3.org/2000/01/rdf-schema#label": "DLC"
+      "@id": "_:b15",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Extent",
+      "http://www.w3.org/2000/01/rdf-schema#label": "[4], 316 p."
     },
     {
-      "@id": "_:b21",
-      "@type": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions",
-      "http://id.loc.gov/ontologies/bibframe/code": "aacr"
-    },
-    {
-      "@id": "_:b22",
-      "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
-      "http://id.loc.gov/ontologies/bflc/encodingLevel": {
+      "@id": "_:b16",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Local",
+      "http://id.loc.gov/ontologies/bibframe/source": {
         "@id": "_:b17"
       },
-      "http://id.loc.gov/ontologies/bibframe/changeDate": "2017-09-28T12:11:18",
-      "http://id.loc.gov/ontologies/bibframe/creationDate": "1983-12-16",
-      "http://id.loc.gov/ontologies/bibframe/descriptionConventions": {
-        "@id": "_:b21"
-      },
-      "http://id.loc.gov/ontologies/bibframe/descriptionModifier": [
-        {
-          "@id": "_:b23"
-        },
-        {
-          "@id": "_:b18"
-        }
-      ],
-      "http://id.loc.gov/ontologies/bibframe/generationProcess": {
-        "@id": "_:b5"
-      },
-      "http://id.loc.gov/ontologies/bibframe/identifiedBy": {
-        "@id": "_:b24"
-      },
-      "http://id.loc.gov/ontologies/bibframe/source": [
-        {
-          "@id": "_:b20"
-        },
-        {
-          "@id": "_:b19"
-        }
-      ],
-      "http://id.loc.gov/ontologies/bibframe/status": {
-        "@id": "_:b4"
-      }
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "10225427"
     },
     {
-      "@id": "_:b23",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Agent",
-      "http://www.w3.org/2000/01/rdf-schema#label": "DLC"
+      "@id": "_:b17",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Source",
+      "http://www.w3.org/2000/01/rdf-schema#label": "OCoLC"
     },
     {
-      "@id": "_:b24",
+      "@id": "_:b18",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Lccn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "   22010771 "
+    },
+    {
+      "@id": "_:b19",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Also available in digital form"
+    },
+    {
+      "@id": "_:b2",
       "@type": "http://id.loc.gov/ontologies/bibframe/Local",
       "http://id.loc.gov/ontologies/bibframe/source": {
         "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
@@ -152,7 +85,131 @@
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "7788356"
     },
     {
+      "@id": "_:b20",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Blue cloth stamped in gilt."
+    },
+    {
+      "@id": "_:b21",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Publication",
+      "http://id.loc.gov/ontologies/bibframe/date": "1922",
+      "http://id.loc.gov/ontologies/bibframe/place": {
+        "@id": "http://id.loc.gov/vocabulary/countries/nyu"
+      }
+    },
+    {
+      "@id": "_:b22",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
+      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
+      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
+    },
+    {
+      "@id": "_:b23",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Title",
+      "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
+      "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
+    },
+    {
+      "@id": "_:b24",
+      "@type": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
+      "http://id.loc.gov/ontologies/bibframe/classificationPortion": "PS3529.S75",
+      "http://id.loc.gov/ontologies/bibframe/source": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      }
+    },
+    {
       "@id": "_:b25",
+      "@type": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
+      "http://id.loc.gov/ontologies/bibframe/classificationPortion": "PZ3.O85",
+      "http://id.loc.gov/ontologies/bibframe/itemPortion": "Two",
+      "http://id.loc.gov/ontologies/bibframe/source": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      }
+    },
+    {
+      "@id": "_:b26",
+      "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+      "http://id.loc.gov/ontologies/bflc/encodingLevel": {
+        "@id": "_:b27"
+      },
+      "http://id.loc.gov/ontologies/bflc/procInfo": "ibc update",
+      "http://id.loc.gov/ontologies/bflc/profile": "profile:bf2:Monograph:Instance",
+      "http://id.loc.gov/ontologies/bibframe/changeDate": "2017-09-28T12:11:18",
+      "http://id.loc.gov/ontologies/bibframe/creationDate": "1983-12-16",
+      "http://id.loc.gov/ontologies/bibframe/descriptionConventions": {
+        "@id": "_:b28"
+      },
+      "http://id.loc.gov/ontologies/bibframe/descriptionModifier": [
+        {
+          "@id": "_:b29"
+        },
+        {
+          "@id": "_:b30"
+        }
+      ],
+      "http://id.loc.gov/ontologies/bibframe/generationProcess": {
+        "@id": "_:b1"
+      },
+      "http://id.loc.gov/ontologies/bibframe/identifiedBy": {
+        "@id": "_:b2"
+      },
+      "http://id.loc.gov/ontologies/bibframe/source": [
+        {
+          "@id": "_:b4"
+        },
+        {
+          "@id": "_:b3"
+        }
+      ],
+      "http://id.loc.gov/ontologies/bibframe/status": {
+        "@id": "_:b5"
+      }
+    },
+    {
+      "@id": "_:b27",
+      "@type": "http://id.loc.gov/ontologies/bflc/EncodingLevel",
+      "http://id.loc.gov/ontologies/bibframe/code": "1"
+    },
+    {
+      "@id": "_:b28",
+      "@type": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions",
+      "http://id.loc.gov/ontologies/bibframe/code": "aacr"
+    },
+    {
+      "@id": "_:b29",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Agent",
+      "http://www.w3.org/2000/01/rdf-schema#label": "DLC"
+    },
+    {
+      "@id": "_:b3",
+      "@type": [
+        "http://id.loc.gov/ontologies/bibframe/Source",
+        "http://id.loc.gov/ontologies/bibframe/Agent"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": "OU"
+    },
+    {
+      "@id": "_:b30",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Agent",
+      "http://www.w3.org/2000/01/rdf-schema#label": "OU"
+    },
+    {
+      "@id": "_:b4",
+      "@type": [
+        "http://id.loc.gov/ontologies/bibframe/Source",
+        "http://id.loc.gov/ontologies/bibframe/Agent"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": "DLC"
+    },
+    {
+      "@id": "_:b5",
+      "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+      "http://id.loc.gov/ontologies/bibframe/code": "c"
+    },
+    {
+      "@id": "_:b6",
       "@type": "http://id.loc.gov/ontologies/bibframe/Contribution",
       "http://id.loc.gov/ontologies/bibframe/agent": {
         "@id": "http://id.loc.gov/authorities/names/no98083416"
@@ -162,20 +219,7 @@
       }
     },
     {
-      "@id": "_:b26",
-      "@type": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
-      "http://id.loc.gov/ontologies/bibframe/classificationPortion": "PS3529.S75",
-      "http://id.loc.gov/ontologies/bibframe/source": {
-        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
-      }
-    },
-    {
-      "@id": "_:b27",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Blue cloth stamped in gilt."
-    },
-    {
-      "@id": "_:b28",
+      "@id": "_:b7",
       "@type": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
       "http://id.loc.gov/ontologies/bibframe/source": {
         "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
@@ -183,64 +227,16 @@
       "http://www.w3.org/2000/01/rdf-schema#label": "PZ3.O85 Two"
     },
     {
-      "@id": "_:b29",
-      "@type": [
-        "http://id.loc.gov/ontologies/bibframe/Publication",
-        "http://id.loc.gov/ontologies/bibframe/ProvisionActivity"
-      ],
-      "http://id.loc.gov/ontologies/bibframe/date": "1922",
-      "http://id.loc.gov/ontologies/bibframe/place": {
-        "@id": "http://id.loc.gov/vocabulary/countries/nyu"
-      }
-    },
-    {
-      "@id": "_:b3",
-      "@type": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
-      "http://id.loc.gov/ontologies/bibframe/classificationPortion": "PZ3.O85",
-      "http://id.loc.gov/ontologies/bibframe/itemPortion": "Two",
-      "http://id.loc.gov/ontologies/bibframe/source": {
-        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
-      }
-    },
-    {
-      "@id": "_:b30",
+      "@id": "_:b8",
       "@type": "http://id.loc.gov/ontologies/bibframe/Title",
       "http://id.loc.gov/ontologies/bflc/titleSortKey": "Two-gun Sue /",
       "http://id.loc.gov/ontologies/bibframe/mainTitle": "Two-gun Sue",
       "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
     },
     {
-      "@id": "_:b4",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Status",
-      "http://id.loc.gov/ontologies/bibframe/code": "c"
-    },
-    {
-      "@id": "_:b5",
-      "@type": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
-      "http://www.w3.org/2000/01/rdf-schema#label": "DLC marc2bibframe2 v1.3.2: 2018-10-26T13:36:02-04:00"
-    },
-    {
-      "@id": "_:b6",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Extent",
-      "http://www.w3.org/2000/01/rdf-schema#label": "[4], 316 p."
-    },
-    {
-      "@id": "_:b7",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Local",
-      "http://id.loc.gov/ontologies/bibframe/source": {
-        "@id": "_:b8"
-      },
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "10225427"
-    },
-    {
-      "@id": "_:b8",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Source",
-      "http://www.w3.org/2000/01/rdf-schema#label": "OCoLC"
-    },
-    {
       "@id": "_:b9",
-      "@type": "http://id.loc.gov/ontologies/bibframe/Lccn",
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "   22010771 "
+      "@type": "http://id.loc.gov/ontologies/bibframe/Note",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Verso of t.p.: Published, 1922."
     },
     {
       "@id": "http://id.loc.gov/authorities/names/n85323845",
@@ -270,7 +266,7 @@
         "http://id.loc.gov/ontologies/bibframe/GenreForm"
       ],
       "http://id.loc.gov/ontologies/bibframe/source": {
-        "@id": "_:b16"
+        "@id": "_:b11"
       },
       "http://www.loc.gov/mads/rdf/v1#authoritativeLabel": "Detective and mystery stories.",
       "http://www.w3.org/2000/01/rdf-schema#label": "Detective and mystery stories."
@@ -286,17 +282,17 @@
       },
       "http://id.loc.gov/ontologies/bibframe/dimensions": "20 cm.",
       "http://id.loc.gov/ontologies/bibframe/extent": {
-        "@id": "_:b6"
+        "@id": "_:b15"
       },
       "http://id.loc.gov/ontologies/bibframe/hasItem": {
         "@id": "http://id.loc.gov/resources/items/c0077883560001"
       },
       "http://id.loc.gov/ontologies/bibframe/identifiedBy": [
         {
-          "@id": "_:b9"
+          "@id": "_:b18"
         },
         {
-          "@id": "_:b7"
+          "@id": "_:b16"
         }
       ],
       "http://id.loc.gov/ontologies/bibframe/instanceOf": {
@@ -310,13 +306,13 @@
       },
       "http://id.loc.gov/ontologies/bibframe/note": [
         {
-          "@id": "_:b27"
+          "@id": "_:b20"
         },
         {
-          "@id": "_:b11"
+          "@id": "_:b19"
         },
         {
-          "@id": "_:b10"
+          "@id": "_:b9"
         }
       ],
       "http://id.loc.gov/ontologies/bibframe/otherPhysicalFormat": {
@@ -324,23 +320,23 @@
       },
       "http://id.loc.gov/ontologies/bibframe/provisionActivity": [
         {
-          "@id": "_:b29"
+          "@id": "_:b21"
         },
         {
-          "@id": "_:b0"
+          "@id": "_:b12"
         }
       ],
       "http://id.loc.gov/ontologies/bibframe/provisionActivityStatement": "New York : Robert M. McBride & Company, 1922.",
       "http://id.loc.gov/ontologies/bibframe/responsibilityStatement": "by Douglas Grant",
       "http://id.loc.gov/ontologies/bibframe/title": [
         {
-          "@id": "_:b14"
+          "@id": "_:b22"
         },
         {
-          "@id": "_:b13"
+          "@id": "_:b10"
         },
         {
-          "@id": "_:b12"
+          "@id": "_:b8"
         }
       ],
       "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
@@ -355,29 +351,29 @@
         "@id": "http://id.loc.gov/resources/instances/c0077883560001"
       },
       "http://id.loc.gov/ontologies/bibframe/shelfMark": {
-        "@id": "_:b28"
+        "@id": "_:b7"
       }
     },
     {
       "@id": "http://id.loc.gov/resources/works/c007788356",
       "@type": "http://id.loc.gov/ontologies/bibframe/Work",
       "http://id.loc.gov/ontologies/bibframe/adminMetadata": {
-        "@id": "_:b22"
+        "@id": "_:b26"
       },
       "http://id.loc.gov/ontologies/bibframe/classification": [
-        {
-          "@id": "_:b26"
-        },
-        {
-          "@id": "_:b3"
-        }
-      ],
-      "http://id.loc.gov/ontologies/bibframe/contribution": [
         {
           "@id": "_:b25"
         },
         {
-          "@id": "_:b15"
+          "@id": "_:b24"
+        }
+      ],
+      "http://id.loc.gov/ontologies/bibframe/contribution": [
+        {
+          "@id": "_:b6"
+        },
+        {
+          "@id": "_:b0"
         }
       ],
       "http://id.loc.gov/ontologies/bibframe/genreForm": {
@@ -390,7 +386,7 @@
         "@id": "http://id.loc.gov/vocabulary/languages/eng"
       },
       "http://id.loc.gov/ontologies/bibframe/title": {
-        "@id": "_:b30"
+        "@id": "_:b23"
       },
       "http://www.w3.org/2000/01/rdf-schema#label": "Two-gun Sue /"
     },

@@ -10,47 +10,47 @@
 <http://id.loc.gov/authorities/names/no98083416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
 <http://id.loc.gov/authorities/names/no98083416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#CorporateName> .
 <http://id.loc.gov/authorities/names/no98083416> <http://www.w3.org/2000/01/rdf-schema#label> "Robert M. McBride & Company," .
-<http://id.loc.gov/authorities/subjects/sh85037260> <http://id.loc.gov/ontologies/bibframe/source> _:b9 .
+<http://id.loc.gov/authorities/subjects/sh85037260> <http://id.loc.gov/ontologies/bibframe/source> _:b3 .
 <http://id.loc.gov/authorities/subjects/sh85037260> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Detective and mystery stories." .
 <http://id.loc.gov/authorities/subjects/sh85037260> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/GenreForm> .
 <http://id.loc.gov/authorities/subjects/sh85037260> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#GenreForm> .
 <http://id.loc.gov/authorities/subjects/sh85037260> <http://www.w3.org/2000/01/rdf-schema#label> "Detective and mystery stories." .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/carrier> <http://id.loc.gov/vocabulary/carriers/nc> .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/dimensions> "20 cm." .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/extent> _:b27 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/extent> _:b7 .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/hasItem> <http://id.loc.gov/resources/items/c0077883560001> .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b28 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b30 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b10 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b8 .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/instanceOf> <http://id.loc.gov/resources/works/c007788356> .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/issuance> <http://id.loc.gov/vocabulary/issuance/mono> .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/media> <http://id.loc.gov/vocabulary/mediaTypes/n> .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b22 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b3 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b4 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b11 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b13 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/note> _:b30 .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/otherPhysicalFormat> <http://id.loc.gov/resources/instances/c0077883560001> .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/provisionActivity> _:b0 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/provisionActivity> _:b24 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/provisionActivity> _:b14 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/provisionActivity> _:b4 .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/provisionActivityStatement> "New York : Robert M. McBride & Company, 1922." .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/responsibilityStatement> "by Douglas Grant" .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b5 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b6 .
-<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b7 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b15 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b2 .
+<http://id.loc.gov/resources/instances/c0077883560001> <http://id.loc.gov/ontologies/bibframe/title> _:b29 .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Electronic> .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Instance> .
 <http://id.loc.gov/resources/instances/c0077883560001> <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
 <http://id.loc.gov/resources/items/c0077883560001> <http://id.loc.gov/ontologies/bibframe/electronicLocator> <http://hdl.loc.gov/loc.gdc/scd0001.00021637324> .
 <http://id.loc.gov/resources/items/c0077883560001> <http://id.loc.gov/ontologies/bibframe/itemOf> <http://id.loc.gov/resources/instances/c0077883560001> .
-<http://id.loc.gov/resources/items/c0077883560001> <http://id.loc.gov/ontologies/bibframe/shelfMark> _:b23 .
+<http://id.loc.gov/resources/items/c0077883560001> <http://id.loc.gov/ontologies/bibframe/shelfMark> _:b28 .
 <http://id.loc.gov/resources/items/c0077883560001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Item> .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b15 .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/classification> _:b21 .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/classification> _:b25 .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/contribution> _:b20 .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/contribution> _:b8 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b19 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/classification> _:b17 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/classification> _:b18 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/contribution> _:b0 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/contribution> _:b27 .
 <http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/genreForm> <http://id.loc.gov/authorities/subjects/sh85037260> .
 <http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/hasInstance> <http://id.loc.gov/resources/instances/c0077883560001> .
 <http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/language> <http://id.loc.gov/vocabulary/languages/eng> .
-<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/title> _:b26 .
+<http://id.loc.gov/resources/works/c007788356> <http://id.loc.gov/ontologies/bibframe/title> _:b16 .
 <http://id.loc.gov/resources/works/c007788356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
 <http://id.loc.gov/resources/works/c007788356> <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
 <http://id.loc.gov/vocabulary/carriers/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Carrier> .
@@ -65,98 +65,98 @@
 <http://id.loc.gov/vocabulary/relators/pbl> <http://id.loc.gov/ontologies/bflc/relatorMatchKey> "publisher" .
 <http://id.loc.gov/vocabulary/relators/pbl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Role> .
 <http://id.loc.gov/vocabulary/relators/pbl> <http://www.w3.org/2000/01/rdf-schema#label> "publisher." .
-_:b0 <http://id.loc.gov/ontologies/bibframe/agent> _:b1 .
-_:b0 <http://id.loc.gov/ontologies/bibframe/date> "1922" .
-_:b0 <http://id.loc.gov/ontologies/bibframe/place> _:b2 .
-_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ProvisionActivity> .
-_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Publication> .
-_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
-_:b1 <http://www.w3.org/2000/01/rdf-schema#label> "Robert M. McBride & Company" .
-_:b10 <http://id.loc.gov/ontologies/bibframe/code> "1" .
-_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/EncodingLevel> .
-_:b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
-_:b11 <http://www.w3.org/2000/01/rdf-schema#label> "OU" .
-_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
-_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
-_:b12 <http://www.w3.org/2000/01/rdf-schema#label> "OU" .
-_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
-_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
-_:b13 <http://www.w3.org/2000/01/rdf-schema#label> "DLC" .
-_:b14 <http://id.loc.gov/ontologies/bibframe/code> "aacr" .
-_:b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/DescriptionConventions> .
-_:b15 <http://id.loc.gov/ontologies/bflc/encodingLevel> _:b10 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/changeDate> "2017-09-28T12:11:18" .
-_:b15 <http://id.loc.gov/ontologies/bibframe/creationDate> "1983-12-16" .
-_:b15 <http://id.loc.gov/ontologies/bibframe/descriptionConventions> _:b14 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/descriptionModifier> _:b11 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/descriptionModifier> _:b16 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/generationProcess> _:b17 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b18 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/source> _:b12 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/source> _:b13 .
-_:b15 <http://id.loc.gov/ontologies/bibframe/status> _:b19 .
-_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
-_:b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
-_:b16 <http://www.w3.org/2000/01/rdf-schema#label> "DLC" .
-_:b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/GenerationProcess> .
-_:b17 <http://www.w3.org/2000/01/rdf-schema#label> "DLC marc2bibframe2 v1.3.2: 2018-10-26T13:36:02-04:00" .
+_:b0 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/authorities/names/n85323845> .
+_:b0 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/ctb> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/PrimaryContribution> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/GenerationProcess> .
+_:b1 <http://www.w3.org/2000/01/rdf-schema#label> "DLC marc2bibframe2 v1.3.2: 2018-10-26T16:16:08-04:00" .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Lccn> .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "   22010771 " .
+_:b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:b11 <http://www.w3.org/2000/01/rdf-schema#label> "Also available in digital form" .
+_:b12 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "7788356" .
+_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:b13 <http://www.w3.org/2000/01/rdf-schema#label> "Blue cloth stamped in gilt." .
+_:b14 <http://id.loc.gov/ontologies/bibframe/date> "1922" .
+_:b14 <http://id.loc.gov/ontologies/bibframe/place> <http://id.loc.gov/vocabulary/countries/nyu> .
+_:b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Publication> .
+_:b15 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
+_:b15 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
+_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b15 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
+_:b16 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
+_:b16 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
+_:b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b16 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
+_:b17 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "PS3529.S75" .
+_:b17 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
+_:b18 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "PZ3.O85" .
+_:b18 <http://id.loc.gov/ontologies/bibframe/itemPortion> "Two" .
 _:b18 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
-_:b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
-_:b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "7788356" .
-_:b19 <http://id.loc.gov/ontologies/bibframe/code> "c" .
-_:b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Status> .
-_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Place> .
-_:b2 <http://www.w3.org/2000/01/rdf-schema#label> "New York" .
-_:b20 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/authorities/names/no98083416> .
-_:b20 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/pbl> .
-_:b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution> .
-_:b21 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "PS3529.S75" .
-_:b21 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
-_:b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
-_:b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
-_:b22 <http://www.w3.org/2000/01/rdf-schema#label> "Blue cloth stamped in gilt." .
-_:b23 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
-_:b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc> .
-_:b23 <http://www.w3.org/2000/01/rdf-schema#label> "PZ3.O85 Two" .
-_:b24 <http://id.loc.gov/ontologies/bibframe/date> "1922" .
-_:b24 <http://id.loc.gov/ontologies/bibframe/place> <http://id.loc.gov/vocabulary/countries/nyu> .
-_:b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ProvisionActivity> .
-_:b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Publication> .
-_:b25 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "PZ3.O85" .
-_:b25 <http://id.loc.gov/ontologies/bibframe/itemPortion> "Two" .
-_:b25 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
-_:b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
-_:b26 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
-_:b26 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
-_:b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
-_:b26 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
-_:b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Extent> .
-_:b27 <http://www.w3.org/2000/01/rdf-schema#label> "[4], 316 p." .
-_:b28 <http://id.loc.gov/ontologies/bibframe/source> _:b29 .
-_:b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
-_:b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "10225427" .
-_:b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
-_:b29 <http://www.w3.org/2000/01/rdf-schema#label> "OCoLC" .
-_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
-_:b3 <http://www.w3.org/2000/01/rdf-schema#label> "Also available in digital form" .
-_:b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Lccn> .
-_:b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "   22010771 " .
-_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
-_:b4 <http://www.w3.org/2000/01/rdf-schema#label> "Verso of t.p.: Published, 1922." .
-_:b5 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
-_:b5 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
-_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
-_:b5 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
-_:b6 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
-_:b6 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
-_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
-_:b6 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
-_:b7 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
-_:b7 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
-_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
-_:b7 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
-_:b8 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/authorities/names/n85323845> .
-_:b8 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/ctb> .
-_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/PrimaryContribution> .
-_:b9 <http://id.loc.gov/ontologies/bibframe/code> "gsafd" .
+_:b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
+_:b19 <http://id.loc.gov/ontologies/bflc/encodingLevel> _:b20 .
+_:b19 <http://id.loc.gov/ontologies/bflc/procInfo> "ibc update" .
+_:b19 <http://id.loc.gov/ontologies/bflc/profile> "profile:bf2:Monograph:Instance" .
+_:b19 <http://id.loc.gov/ontologies/bibframe/changeDate> "2017-09-28T12:11:18" .
+_:b19 <http://id.loc.gov/ontologies/bibframe/creationDate> "1983-12-16" .
+_:b19 <http://id.loc.gov/ontologies/bibframe/descriptionConventions> _:b21 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/descriptionModifier> _:b22 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/descriptionModifier> _:b23 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/generationProcess> _:b1 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b12 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/source> _:b24 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/source> _:b25 .
+_:b19 <http://id.loc.gov/ontologies/bibframe/status> _:b26 .
+_:b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
+_:b2 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
+_:b2 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b2 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
+_:b20 <http://id.loc.gov/ontologies/bibframe/code> "1" .
+_:b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bflc/EncodingLevel> .
+_:b21 <http://id.loc.gov/ontologies/bibframe/code> "aacr" .
+_:b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/DescriptionConventions> .
+_:b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b22 <http://www.w3.org/2000/01/rdf-schema#label> "DLC" .
+_:b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b23 <http://www.w3.org/2000/01/rdf-schema#label> "OU" .
+_:b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
+_:b24 <http://www.w3.org/2000/01/rdf-schema#label> "DLC" .
+_:b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
+_:b25 <http://www.w3.org/2000/01/rdf-schema#label> "OU" .
+_:b26 <http://id.loc.gov/ontologies/bibframe/code> "c" .
+_:b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Status> .
+_:b27 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/authorities/names/no98083416> .
+_:b27 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/pbl> .
+_:b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution> .
+_:b28 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc> .
+_:b28 <http://www.w3.org/2000/01/rdf-schema#label> "PZ3.O85 Two" .
+_:b29 <http://id.loc.gov/ontologies/bflc/titleSortKey> "Two-gun Sue /" .
+_:b29 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Two-gun Sue" .
+_:b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b29 <http://www.w3.org/2000/01/rdf-schema#label> "Two-gun Sue /" .
+_:b3 <http://id.loc.gov/ontologies/bibframe/code> "gsafd" .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
+_:b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:b30 <http://www.w3.org/2000/01/rdf-schema#label> "Verso of t.p.: Published, 1922." .
+_:b4 <http://id.loc.gov/ontologies/bibframe/agent> _:b5 .
+_:b4 <http://id.loc.gov/ontologies/bibframe/date> "1922" .
+_:b4 <http://id.loc.gov/ontologies/bibframe/place> _:b6 .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Publication> .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent> .
+_:b5 <http://www.w3.org/2000/01/rdf-schema#label> "Robert M. McBride & Company" .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Place> .
+_:b6 <http://www.w3.org/2000/01/rdf-schema#label> "New York" .
+_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Extent> .
+_:b7 <http://www.w3.org/2000/01/rdf-schema#label> "[4], 316 p." .
+_:b8 <http://id.loc.gov/ontologies/bibframe/source> _:b9 .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "10225427" .
 _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source> .
+_:b9 <http://www.w3.org/2000/01/rdf-schema#label> "OCoLC" .
