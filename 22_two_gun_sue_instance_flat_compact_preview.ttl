@@ -17,106 +17,106 @@
     bflc:name10MatchKey "Robert M. McBride & Company,".
 <http://id.loc.gov/authorities/subjects/sh85037260> a madsrdf:GenreForm, bf:GenreForm;
     rdfs:label "Detective and mystery stories.";
-    bf:source _:b9;
+    bf:source _:b0_b3;
     madsrdf:authoritativeLabel "Detective and mystery stories.".
-_:b9 a bf:Source;
+_:b0_b3 a bf:Source;
     bf:code "gsafd".
 <http://id.loc.gov/resources/instances/c0077883560001> a bf:Instance, bf:Electronic;
     rdfs:label "Two-gun Sue /";
     bf:carrier <http://id.loc.gov/vocabulary/carriers/nc>;
     bf:dimensions "20 cm.";
-    bf:extent _:b27;
+    bf:extent _:b0_b7;
     bf:hasItem <http://id.loc.gov/resources/items/c0077883560001>;
-    bf:identifiedBy _:b30, _:b28;
+    bf:identifiedBy _:b0_b8, _:b0_b10;
     bf:instanceOf <http://id.loc.gov/resources/works/c007788356>;
     bf:issuance <http://id.loc.gov/vocabulary/issuance/mono>;
     bf:media <http://id.loc.gov/vocabulary/mediaTypes/n>;
-    bf:note _:b4, _:b3, _:b22;
+    bf:note _:b0_b30, _:b0_b13, _:b0_b11;
     bf:otherPhysicalFormat <http://id.loc.gov/resources/instances/c0077883560001>;
-    bf:provisionActivity _:b24, _:b0;
+    bf:provisionActivity _:b0_b4, _:b0_b14;
     bf:provisionActivityStatement "New York : Robert M. McBride & Company, 1922.";
     bf:responsibilityStatement "by Douglas Grant";
-    bf:title _:b7, _:b6, _:b5.
+    bf:title _:b0_b29, _:b0_b2, _:b0_b15.
 <http://id.loc.gov/vocabulary/carriers/nc> a bf:Carrier;
     rdfs:label "volume".
-_:b27 a bf:Extent;
+_:b0_b7 a bf:Extent;
     rdfs:label "[4], 316 p.".
 <http://id.loc.gov/resources/items/c0077883560001> a bf:Item;
     bf:electronicLocator <http://hdl.loc.gov/loc.gdc/scd0001.00021637324>;
     bf:itemOf <http://id.loc.gov/resources/instances/c0077883560001>;
-    bf:shelfMark _:b23.
-_:b28 a bf:Local;
-    bf:source _:b29;
-    rdf:value "10225427".
-_:b30 a bf:Lccn;
+    bf:shelfMark _:b0_b28.
+_:b0_b10 a bf:Lccn;
     rdf:value "   22010771 ".
+_:b0_b8 a bf:Local;
+    bf:source _:b0_b9;
+    rdf:value "10225427".
 <http://id.loc.gov/resources/works/c007788356> a bf:Work;
     rdfs:label "Two-gun Sue /";
-    bf:title _:b26;
-    bf:adminMetadata _:b15;
-    bf:classification _:b25, _:b21;
-    bf:contribution _:b8, _:b20;
+    bf:title _:b0_b16;
+    bf:adminMetadata _:b0_b19;
+    bf:classification _:b0_b18, _:b0_b17;
+    bf:contribution _:b0_b27, _:b0_b0;
     bf:genreForm <http://id.loc.gov/authorities/subjects/sh85037260>;
     bf:hasInstance <http://id.loc.gov/resources/instances/c0077883560001>;
     bf:language <http://id.loc.gov/vocabulary/languages/eng>.
 <http://id.loc.gov/vocabulary/issuance/mono> a bf:Issuance.
 <http://id.loc.gov/vocabulary/mediaTypes/n> a bf:Media;
     rdfs:label "unmediated".
-_:b22 a bf:Note;
-    rdfs:label "Blue cloth stamped in gilt.".
-_:b3 a bf:Note;
+_:b0_b11 a bf:Note;
     rdfs:label "Also available in digital form".
-_:b4 a bf:Note;
+_:b0_b13 a bf:Note;
+    rdfs:label "Blue cloth stamped in gilt.".
+_:b0_b30 a bf:Note;
     rdfs:label "Verso of t.p.: Published, 1922.".
-_:b0 a bf:Publication;
-    bf:agent _:b1;
-    bf:date "1922";
-    bf:place _:b2.
-_:b24 a bf:Publication;
+_:b0_b14 a bf:Publication;
     bf:date "1922";
     bf:place <http://id.loc.gov/vocabulary/countries/nyu>.
-_:b5 a bf:Title;
+_:b0_b4 a bf:Publication;
+    bf:agent _:b0_b5;
+    bf:date "1922";
+    bf:place _:b0_b6.
+_:b0_b15 a bf:Title;
     rdfs:label "Two-gun Sue /";
     bflc:titleSortKey "Two-gun Sue /";
     bf:mainTitle "Two-gun Sue".
-_:b6 a bf:Title;
+_:b0_b2 a bf:Title;
     rdfs:label "Two-gun Sue /";
     bflc:titleSortKey "Two-gun Sue /";
     bf:mainTitle "Two-gun Sue".
-_:b7 a bf:Title;
+_:b0_b29 a bf:Title;
     rdfs:label "Two-gun Sue /";
     bflc:titleSortKey "Two-gun Sue /";
     bf:mainTitle "Two-gun Sue".
-_:b23 a bf:ShelfMarkLcc;
+_:b0_b28 a bf:ShelfMarkLcc;
     rdfs:label "PZ3.O85 Two";
     bf:source <http://id.loc.gov/vocabulary/organizations/dlc>.
-_:b15 a bf:AdminMetadata;
-    bf:source _:b13, _:b12;
-    bf:identifiedBy _:b18;
-    bflc:encodingLevel _:b10;
+_:b0_b19 a bf:AdminMetadata;
+    bf:source _:b0_b25, _:b0_b24;
+    bf:identifiedBy _:b0_b12;
+    bflc:encodingLevel _:b0_b20;
     bflc:procInfo "ibc update";
     bflc:profile "profile:bf2:Monograph:Instance";
     bf:changeDate "2017-09-28T12:11:18";
     bf:creationDate "1983-12-16";
-    bf:descriptionConventions _:b14;
-    bf:descriptionModifier _:b16, _:b11;
-    bf:generationProcess _:b17;
-    bf:status _:b19.
-_:b21 a bf:ClassificationLcc;
+    bf:descriptionConventions _:b0_b21;
+    bf:descriptionModifier _:b0_b23, _:b0_b22;
+    bf:generationProcess _:b0_b1;
+    bf:status _:b0_b26.
+_:b0_b17 a bf:ClassificationLcc;
     bf:source <http://id.loc.gov/vocabulary/organizations/dlc>;
     bf:classificationPortion "PS3529.S75".
-_:b25 a bf:ClassificationLcc;
+_:b0_b18 a bf:ClassificationLcc;
     bf:source <http://id.loc.gov/vocabulary/organizations/dlc>;
     bf:classificationPortion "PZ3.O85";
     bf:itemPortion "Two".
-_:b20 a bf:Contribution;
-    bf:agent <http://id.loc.gov/authorities/names/no98083416>;
-    bf:role <http://id.loc.gov/vocabulary/relators/pbl>.
-_:b8 a bflc:PrimaryContribution;
+_:b0_b0 a bflc:PrimaryContribution;
     bf:agent <http://id.loc.gov/authorities/names/n85323845>;
     bf:role <http://id.loc.gov/vocabulary/relators/ctb>.
+_:b0_b27 a bf:Contribution;
+    bf:agent <http://id.loc.gov/authorities/names/no98083416>;
+    bf:role <http://id.loc.gov/vocabulary/relators/pbl>.
 <http://id.loc.gov/vocabulary/languages/eng> a bf:Language.
-_:b26 a bf:Title;
+_:b0_b16 a bf:Title;
     rdfs:label "Two-gun Sue /";
     bflc:titleSortKey "Two-gun Sue /";
     bf:mainTitle "Two-gun Sue".
@@ -126,28 +126,28 @@ _:b26 a bf:Title;
 <http://id.loc.gov/vocabulary/relators/pbl> a bf:Role;
     rdfs:label "publisher.";
     bflc:relatorMatchKey "publisher".
-_:b1 a bf:Agent;
-    rdfs:label "Robert M. McBride & Company".
-_:b2 a bf:Place;
-    rdfs:label "New York".
-_:b10 a bflc:EncodingLevel;
-    bf:code "1".
-_:b11 a bf:Agent;
-    rdfs:label "OU".
-_:b12 a bf:Source, bf:Agent;
-    rdfs:label "OU".
-_:b13 a bf:Source, bf:Agent;
-    rdfs:label "DLC".
-_:b14 a bf:DescriptionConventions;
-    bf:code "aacr".
-_:b16 a bf:Agent;
-    rdfs:label "DLC".
-_:b17 a bf:GenerationProcess;
-    rdfs:label "DLC marc2bibframe2 v1.3.2: 2018-10-26T13:36:02-04:00".
-_:b18 a bf:Local;
+_:b0_b1 a bf:GenerationProcess;
+    rdfs:label "DLC marc2bibframe2 v1.3.2: 2018-10-26T16:16:08-04:00".
+_:b0_b12 a bf:Local;
     bf:source <http://id.loc.gov/vocabulary/organizations/dlc>;
     rdf:value "7788356".
-_:b19 a bf:Status;
+_:b0_b20 a bflc:EncodingLevel;
+    bf:code "1".
+_:b0_b21 a bf:DescriptionConventions;
+    bf:code "aacr".
+_:b0_b22 a bf:Agent;
+    rdfs:label "DLC".
+_:b0_b23 a bf:Agent;
+    rdfs:label "OU".
+_:b0_b24 a bf:Source, bf:Agent;
+    rdfs:label "DLC".
+_:b0_b25 a bf:Source, bf:Agent;
+    rdfs:label "OU".
+_:b0_b26 a bf:Status;
     bf:code "c".
-_:b29 a bf:Source;
+_:b0_b5 a bf:Agent;
+    rdfs:label "Robert M. McBride & Company".
+_:b0_b6 a bf:Place;
+    rdfs:label "New York".
+_:b0_b9 a bf:Source;
     rdfs:label "OCoLC".

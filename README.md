@@ -342,25 +342,31 @@ This loads OK! Save the preview Turtle output:
 Let's see whether we can generate a loadable version of this data from the Turtle output:
 
 ```
-> rapper --input turtle --output ntriples 20_two_gun_sue.ttl | sort > 21_two_gun_sue.nt 
-rapper: Parsing URI file:///Users/simeon/src/bfe-data/20_two_gun_sue.ttl with parser turtle
-rapper: Serializing with serializer ntriples
-rapper: Parsing returned 161 triples
-> jsonld --input-format turtle --compact 20_two_gun_sue.ttl > /tmp/a
-Compacted in 0.011164 seconds.
+> jsonld --input-format turtle --compact 20_two_gun_sue_instance_preview.ttl > /tmp/a
+Compacted in 0.011573 seconds.
 > jsonld --flatten /tmp/a > /tmp/b
-Flattened in 0.023556 seconds.
+Flattened in 0.026206 seconds.
 > jsonld --compact /tmp/b > 22_two_gun_sue_instance_flat_compact.jsonld
-Compacted in 0.030836 seconds.
+Compacted in 0.027251 seconds.
 > jsonld --format ntriples 22_two_gun_sue_instance_flat_compact.jsonld | sort > 23_two_gun_sue_instance_flat_compact.nt
-Parsed 161 statements in 0.057687 seconds @ 2790.923431622376 statements/second.
-> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_instance_flat_compact.nt 
-Graphs 21_two_gun_sue.nt and 23_two_gun_sue_instance_flat_compact.nt are isomorphic
+Parsed 161 statements in 0.057431 seconds @ 2803.364036844213 statements/second.
+
+> rdfdiffb.py -s 20_two_gun_sue_instance_preview.ttl 23_two_gun_sue_instance_flat_compact.nt 
+Graphs 20_two_gun_sue_instance_preview.ttl and 23_two_gun_sue_instance_flat_compact.nt are isomorphic
 ```
 
 --> <https://zimeon.github.io/bfe-data/22_two_gun_sue_instance_flat_compact.jsonld>
 
 **BFE loads this data correctly suggesting that flatten and compact works to make JSON-LD readable by BFE without dropping triples.**
+
+Save from the BFE preview as Turtle then verify same as starting preview:
+
+--> <https://zimeon.github.io/bfe-data/22_two_gun_sue_instance_flat_compact_preview.ttl>
+
+```
+> rdfdiffb.py -s 20_two_gun_sue_instance_preview.ttl 22_two_gun_sue_instance_flat_compact_preview.ttl
+Graphs 20_two_gun_sue_instance_preview.ttl and 22_two_gun_sue_instance_flat_compact_preview.ttl are isomorphic
+```
 
 ## Synthetic extra data
 
