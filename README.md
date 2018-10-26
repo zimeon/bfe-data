@@ -4,7 +4,7 @@ These notes from <https://github.com/zimeon/bfe-data>, nicely displayed version 
 
 ## Conclusions - 2018-10-26
 
-  1. BFE will not correctly load arbitrary JSON-LD representations for a given set of triples. It appears that applying the **flatten** and then **compact** algorithms will result in JSON-LD that can be loaded without dropping triples.
+  1. BFE will not correctly load arbitrary JSON-LD representations for a given set of triples. It appears that applying the **flatten** and then **compact** algorithms will result in JSON-LD that can be loaded without dropping triples. Given the availability of a good [JavaScript JSON-LD library](https://github.com/digitalbazaar/jsonld.js/) it would of course be easy to build this transformation into BFE.
   2. Unless it conflicts with patterns used to distinguish Works and Instances, BFE will load and preserve arbitrary additional data beyond that supported for display and edit via the selected profile.
   3. BFE will load instance data only from a URL that includes the string "instance" ([BFE code](https://github.com/lcnetdev/bfe/blob/3cf954494e1fcd77762e77ffe405d182f41320a1/src/bfe.js#L760-L763)) -- this could very easily be changed.
 
