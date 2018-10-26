@@ -358,6 +358,8 @@ Graphs 21_two_gun_sue.nt and 23_two_gun_sue_instance_flat_compact.nt are isomorp
 
 --> <https://zimeon.github.io/bfe-data/22_two_gun_sue_instance_flat_compact.jsonld>
 
+**BFE loads this data correctly suggesting that flatten and compact works to make JSON-LD readable by BFE without dropping triples.**
+
 ## Synthetic extra data
 
 ### 30. Extra data with structure
