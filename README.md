@@ -307,7 +307,27 @@ which is correct.
 
 ## More complex instance data
 
-Load IBC -- LCCN -- 22010771
+### 20. Load instance data from MARC
+
+In [BFE](http://bibframe.org/bfe/index.html), select tab `Load MARC`, entry type `LCCN` and then enter [22010771](https://lccn.loc.gov/22010771). After loading the data a BIBFRAME Instance page is displayed with for "Two-gun Sue". Select Preview from the bottom of the page, and copy JSON-LD output to:
+
+--> <https://zimeon.github.io/bfe-data/20_two_gun_sue.jsonld>
+
+Restart BFE and then select tab `Load IBC`, enter `https://zimeon.github.io/bfe-data/20_two_gun_sue.jsonld`. Result in an error message **Please choose an instance to load**
+
+Attempting to load as a work does complete but seems to just pick out 4 of the 161 triples:
+
+```
+...
+<http://id.loc.gov/resources/works/e201798077861968054014173633604452640887> bf:content <http://id.loc.gov/vocabulary/contentTypes/txt>;
+    a bf:Work.
+<http://id.loc.gov/vocabulary/contentTypes/txt> a bf:Content;
+    rdfs:label "text".
+```
+
+## 21, 22, 23. Manipulation of this instance
+
+... have played with the below but all pointless as BFE won't load <https://zimeon.github.io/bfe-data/20_two_gun_sue.jsonld>
 
 ```
 > rapper --input turtle --output ntriples 20_two_gun_sue.ttl | sort > 21_two_gun_sue.nt 
@@ -318,10 +338,10 @@ rapper: Parsing returned 161 triples
 Compacted in 0.011164 seconds.
 > jsonld --flatten /tmp/a > /tmp/b
 Flattened in 0.023556 seconds.
-> jsonld --compact /tmp/b > 22_two_gun_sue_flat_expand.jsonld
+> jsonld --compact /tmp/b > 22_two_gun_sue_flat_compact.jsonld
 Compacted in 0.030836 seconds.
-> jsonld --format ntriples 22_two_gun_sue_flat_expand.jsonld | sort > 23_two_gun_sue_flat_expand.nt
+> jsonld --format ntriples 22_two_gun_sue_flat_compact.jsonld | sort > 23_two_gun_sue_flat_compact.nt
 Parsed 161 statements in 0.057687 seconds @ 2790.923431622376 statements/second.
-> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_flat_expand.nt 
-Graphs 21_two_gun_sue.nt and 23_two_gun_sue_flat_expand.nt are isomorphic
+> rdfdiffb.py -s 21_two_gun_sue.nt 23_two_gun_sue_flat_compact.nt 
+Graphs 21_two_gun_sue.nt and 23_two_gun_sue_flat_compact.nt are isomorphic
 ```
