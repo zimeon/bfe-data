@@ -1,0 +1,103 @@
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b1 .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b2 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b3 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:b4 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#editorialNote> "[Machine-derived non-Latin script reference project.]" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#editorialNote> "[Non-Latin script references not evaluated.]" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#identifiesRWO> <http://id.loc.gov/rwo/agents/n80076765> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#prefLabel> "Adams, Douglas, 1952-2001"@en .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://id.loc.gov/authorities/names/nr93025732> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_LCNAF> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b5 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasVariant> _:b6 .
+<http://id.loc.gov/authorities/names/n80076765> <http://id.loc.gov/vocabulary/identifiers/local> "(OCoLC)oca00458128" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2008/05/skos-xl#altLabel> "亞當斯, 1952-2001"@en .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b7 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2008/05/skos-xl#altLabel> "אדאמס, דאגלאס, 1952-2001-"@en .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b8 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#changeNote> _:b9 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#changeNote> _:b10 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#altLabel> "亞當斯, 1952-2001" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#altLabel> "אדאמס, דאגלאס, 1952-2001-" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Adams, Douglas, 1952-2001"@en .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#elementList> _:b0 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#see> <http://id.loc.gov/authorities/names/nr93025732> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#classification> "PR6051.D3352" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasExactExternalAuthority> <http://viaf.org/viaf/sourceID/LC%7Cn+80076765#skos:Concept> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/names/n80076765> <http://id.loc.gov/vocabulary/identifiers/lccn> "n 80076765" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b11 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b12 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b13 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b14 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b15 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b16 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#hasSource> _:b17 .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://viaf.org/viaf/sourceID/LC%7Cn+80076765#skos:Concept> .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#editorial> "[Machine-derived non-Latin script reference project.]" .
+<http://id.loc.gov/authorities/names/n80076765> <http://www.w3.org/2004/02/skos/core#editorial> "[Non-Latin script references not evaluated.]" .
+_:b3 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "revised" .
+_:b3 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "2016-07-26T16:37:56" .
+_:b3 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b3 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+_:b4 <http://id.loc.gov/ontologies/RecordInfo#recordStatus> "new" .
+_:b4 <http://id.loc.gov/ontologies/RecordInfo#recordChangeDate> "1980-07-22T00:00:00" .
+_:b4 <http://id.loc.gov/ontologies/RecordInfo#recordContentSource> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/RecordInfo#RecordInfo> .
+_:b4 <http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging> <http://id.loc.gov/vocabulary/iso639-2/eng> .
+_:b5 <http://www.loc.gov/mads/rdf/v1#elementList> _:b18 .
+_:b5 <http://www.loc.gov/mads/rdf/v1#variantLabel> "亞當斯, 1952-2001"@en .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b6 <http://www.loc.gov/mads/rdf/v1#elementList> _:b19 .
+_:b6 <http://www.loc.gov/mads/rdf/v1#variantLabel> "אדאמס, דאגלאס, 1952-2001-"@en .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Variant> .
+_:b7 <http://www.w3.org/2008/05/skos-xl#literalForm> "אדאמס, דאגלאס, 1952-2001-"@en .
+_:b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b8 <http://www.w3.org/2008/05/skos-xl#literalForm> "亞當斯, 1952-2001"@en .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b9 <http://purl.org/vocab/changeset/schema#createdDate> "1980-07-22T00:00:00" .
+_:b9 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/n80076765> .
+_:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b9 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b9 <http://purl.org/vocab/changeset/schema#changeReason> "new" .
+_:b10 <http://purl.org/vocab/changeset/schema#createdDate> "2016-07-26T16:37:56" .
+_:b10 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/n80076765> .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b10 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b10 <http://purl.org/vocab/changeset/schema#changeReason> "revised" .
+_:b11 <http://www.loc.gov/mads/rdf/v1#citation-status> "notfound" .
+_:b11 <http://www.loc.gov/mads/rdf/v1#citation-source> "City of death, 1998: credits (David Agnew; teleplay)" .
+_:b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b12 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b12 <http://www.loc.gov/mads/rdf/v1#citation-source> "Tel. call to pub., 3/31/80" .
+_:b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b12 <http://www.loc.gov/mads/rdf/v1#citation-note> "(Douglas Noel Adams, b. 1952, Cambridge, Eng.)"@en .
+_:b13 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b13 <http://www.loc.gov/mads/rdf/v1#citation-source> "Washington Post, 13 May 2001:" .
+_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b13 <http://www.loc.gov/mads/rdf/v1#citation-note> "obit. (Douglas Adams, 49, died May 11, 2001, in Santa Barbara, Calif.; born in Cambridge, England and attended Cambridge University; wrote for radio, television, movies, and computer games; founded multimedia company Digital Village)"@en .
+_:b14 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b14 <http://www.loc.gov/mads/rdf/v1#citation-source> "Doctor Who, a celebration 1983:" .
+_:b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b14 <http://www.loc.gov/mads/rdf/v1#citation-note> "p. 217 (David Agnew (Douglas Adams and Graham Williams))"@en .
+_:b15 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b15 <http://www.loc.gov/mads/rdf/v1#citation-source> "IMDb, via WWW, Douglas Adams" .
+_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b15 <http://www.loc.gov/mads/rdf/v1#citation-note> "(born 11 March, 1952)"@en .
+_:b16 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b16 <http://www.loc.gov/mads/rdf/v1#citation-source> "His The hitchhiker's guide to the galaxy, 1980, c1979:" .
+_:b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b16 <http://www.loc.gov/mads/rdf/v1#citation-note> "t.p. (Douglas Adams)"@en .
+_:b17 <http://www.loc.gov/mads/rdf/v1#citation-status> "found" .
+_:b17 <http://www.loc.gov/mads/rdf/v1#citation-source> "Douglas Adams, via WWW, Aug. 6, 2012" .
+_:b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Source> .
+_:b17 <http://www.loc.gov/mads/rdf/v1#citation-note> "(educated at Brentwood School, Essex; B.A., M.A., English Literature, St. John's College, Cambridge; living in Santa Barbara, California with wife and family when he died unexpectedly)"@en .
+

@@ -1,0 +1,305 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "mads": "http://www.loc.gov/mads/rdf/v1#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "identifiers": "http://id.loc.gov/vocabulary/identifiers/",
+    "skosxl": "http://www.w3.org/2008/05/skos-xl#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b14",
+      "rdf:first": {
+        "@id": "_:b15"
+      },
+      "rdf:rest": {
+        "@id": "_:b16"
+      }
+    },
+    {
+      "@id": "http://id.loc.gov/authorities/names/n80076765",
+      "mads:adminMetadata": [
+        {
+          "@id": "_:b9"
+        },
+        {
+          "@id": "_:b6"
+        }
+      ],
+      "mads:editorialNote": [
+        "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]"
+      ],
+      "mads:isMemberOfMADSScheme": {
+        "@id": "http://id.loc.gov/authorities/names"
+      },
+      "mads:identifiesRWO": {
+        "@id": "http://id.loc.gov/rwo/agents/n80076765"
+      },
+      "skos:prefLabel": {
+        "@value": "Adams, Douglas, 1952-2001",
+        "@language": "en"
+      },
+      "rdfs:seeAlso": {
+        "@id": "http://id.loc.gov/authorities/names/nr93025732"
+      },
+      "skos:inScheme": {
+        "@id": "http://id.loc.gov/authorities/names"
+      },
+      "mads:isMemberOfMADSCollection": [
+        {
+          "@id": "http://id.loc.gov/authorities/names/collection_LCNAF"
+        },
+        {
+          "@id": "http://id.loc.gov/authorities/names/collection_NamesAuthorizedHeadings"
+        }
+      ],
+      "mads:hasVariant": [
+        {
+          "@id": "_:b12"
+        },
+        {
+          "@id": "_:b7"
+        }
+      ],
+      "identifiers:local": "(OCoLC)oca00458128",
+      "skosxl:altLabel": [
+        {
+          "@value": "亞當斯, 1952-2001",
+          "@language": "en"
+        },
+        {
+          "@id": "_:b5"
+        },
+        {
+          "@value": "אדאמס, דאגלאס, 1952-2001-",
+          "@language": "en"
+        },
+        {
+          "@id": "_:b1"
+        }
+      ],
+      "skos:changeNote": [
+        {
+          "@id": "_:b17"
+        },
+        {
+          "@id": "_:b3"
+        }
+      ],
+      "skos:altLabel": [
+        "亞當斯, 1952-2001",
+        "אדאמס, דאגלאס, 1952-2001-"
+      ],
+      "mads:authoritativeLabel": {
+        "@value": "Adams, Douglas, 1952-2001",
+        "@language": "en"
+      },
+      "mads:elementList": {
+        "@id": "_:b14"
+      },
+      "mads:see": {
+        "@id": "http://id.loc.gov/authorities/names/nr93025732"
+      },
+      "mads:classification": "PR6051.D3352",
+      "mads:hasExactExternalAuthority": {
+        "@id": "http://viaf.org/viaf/sourceID/LC%7Cn+80076765#skos:Concept"
+      },
+      "@type": [
+        "mads:PersonalName",
+        "mads:Authority",
+        "skos:Concept"
+      ],
+      "identifiers:lccn": "n 80076765",
+      "mads:hasSource": [
+        {
+          "@id": "_:b2"
+        },
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "_:b18"
+        },
+        {
+          "@id": "_:b11"
+        },
+        {
+          "@id": "_:b19"
+        },
+        {
+          "@id": "_:b4"
+        },
+        {
+          "@id": "_:b10"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "http://viaf.org/viaf/sourceID/LC%7Cn+80076765#skos:Concept"
+      },
+      "skos:editorial": [
+        "[Machine-derived non-Latin script reference project.]",
+        "[Non-Latin script references not evaluated.]"
+      ]
+    },
+    {
+      "@id": "_:b9",
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": "revised",
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": "2016-07-26T16:37:56",
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      },
+      "@type": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+      "http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      }
+    },
+    {
+      "@id": "_:b6",
+      "http://id.loc.gov/ontologies/RecordInfo#recordStatus": "new",
+      "http://id.loc.gov/ontologies/RecordInfo#recordChangeDate": "1980-07-22T00:00:00",
+      "http://id.loc.gov/ontologies/RecordInfo#recordContentSource": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      },
+      "@type": "http://id.loc.gov/ontologies/RecordInfo#RecordInfo",
+      "http://id.loc.gov/ontologies/RecordInfo#languageOfCataloging": {
+        "@id": "http://id.loc.gov/vocabulary/iso639-2/eng"
+      }
+    },
+    {
+      "@id": "_:b12",
+      "mads:elementList": {
+        "@id": "_:b13"
+      },
+      "mads:variantLabel": {
+        "@value": "亞當斯, 1952-2001",
+        "@language": "en"
+      },
+      "@type": [
+        "mads:PersonalName",
+        "mads:Variant"
+      ]
+    },
+    {
+      "@id": "_:b7",
+      "mads:elementList": {
+        "@id": "_:b8"
+      },
+      "mads:variantLabel": {
+        "@value": "אדאמס, דאגלאס, 1952-2001-",
+        "@language": "en"
+      },
+      "@type": [
+        "mads:PersonalName",
+        "mads:Variant"
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "skosxl:literalForm": {
+        "@value": "אדאמס, דאגלאס, 1952-2001-",
+        "@language": "en"
+      },
+      "@type": "skosxl:Label"
+    },
+    {
+      "@id": "_:b1",
+      "skosxl:literalForm": {
+        "@value": "亞當斯, 1952-2001",
+        "@language": "en"
+      },
+      "@type": "skosxl:Label"
+    },
+    {
+      "@id": "_:b17",
+      "http://purl.org/vocab/changeset/schema#createdDate": "1980-07-22T00:00:00",
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": {
+        "@id": "http://id.loc.gov/authorities/names/n80076765"
+      },
+      "@type": "http://purl.org/vocab/changeset/schema#ChangeSet",
+      "http://purl.org/vocab/changeset/schema#creatorName": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      },
+      "http://purl.org/vocab/changeset/schema#changeReason": "new"
+    },
+    {
+      "@id": "_:b3",
+      "http://purl.org/vocab/changeset/schema#createdDate": "2016-07-26T16:37:56",
+      "http://purl.org/vocab/changeset/schema#subjectOfChange": {
+        "@id": "http://id.loc.gov/authorities/names/n80076765"
+      },
+      "@type": "http://purl.org/vocab/changeset/schema#ChangeSet",
+      "http://purl.org/vocab/changeset/schema#creatorName": {
+        "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+      },
+      "http://purl.org/vocab/changeset/schema#changeReason": "revised"
+    },
+    {
+      "@id": "_:b2",
+      "mads:citation-status": "notfound",
+      "mads:citation-source": "City of death, 1998: credits (David Agnew; teleplay)",
+      "@type": "mads:Source"
+    },
+    {
+      "@id": "_:b0",
+      "mads:citation-status": "found",
+      "mads:citation-source": "Tel. call to pub., 3/31/80",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "(Douglas Noel Adams, b. 1952, Cambridge, Eng.)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "_:b18",
+      "mads:citation-status": "found",
+      "mads:citation-source": "Washington Post, 13 May 2001:",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "obit. (Douglas Adams, 49, died May 11, 2001, in Santa Barbara, Calif.; born in Cambridge, England and attended Cambridge University; wrote for radio, television, movies, and computer games; founded multimedia company Digital Village)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "_:b11",
+      "mads:citation-status": "found",
+      "mads:citation-source": "Doctor Who, a celebration 1983:",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "p. 217 (David Agnew (Douglas Adams and Graham Williams))",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "_:b19",
+      "mads:citation-status": "found",
+      "mads:citation-source": "IMDb, via WWW, Douglas Adams",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "(born 11 March, 1952)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "_:b4",
+      "mads:citation-status": "found",
+      "mads:citation-source": "His The hitchhiker's guide to the galaxy, 1980, c1979:",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "t.p. (Douglas Adams)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "_:b10",
+      "mads:citation-status": "found",
+      "mads:citation-source": "Douglas Adams, via WWW, Aug. 6, 2012",
+      "@type": "mads:Source",
+      "mads:citation-note": {
+        "@value": "(educated at Brentwood School, Essex; B.A., M.A., English Literature, St. John's College, Cambridge; living in Santa Barbara, California with wife and family when he died unexpectedly)",
+        "@language": "en"
+      }
+    }
+  ]
+}
