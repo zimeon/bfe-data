@@ -1,0 +1,27 @@
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85009793> .
+_:Nd193bc28d56b435fae207b86d7b408be <http://www.w3.org/2000/01/rdf-schema#label> "(lcgft) Science fiction" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> _:Nd193bc28d56b435fae207b86d7b408be .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#deathPlace> <http://id.loc.gov/authorities/names/n79081574> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/2000/01/rdf-schema#label> "\n              Adams, Douglas,\n              1952-2001\n            " .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n82068148> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85110591> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:N7879b19d7417418fade5eb82213415f7 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority> <http://id.loc.gov/authorities/names/n80076765> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#deathDate> _:N0acc5713c08d4c38aed277efff05a624 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:N2d3935c4059f49c8be2bd8f4e65d2f29 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n79023147> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#birthPlace> <http://id.loc.gov/authorities/names/n79018410> .
+_:N4fbefa43c7234b0eb0ba80795990db7a <http://www.w3.org/2000/01/rdf-schema#label> "Computer game writer" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> _:N4fbefa43c7234b0eb0ba80795990db7a .
+_:N0acc5713c08d4c38aed277efff05a624 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 2001-05-11" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#gender> <http://id.loc.gov/authorities/demographicTerms/dg2015060003> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85118942> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85092863> .
+_:N7dd0d032d89d4dc58e623a5b21a353ef <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1952-03-11" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#birthDate> _:N7dd0d032d89d4dc58e623a5b21a353ef .
+
+

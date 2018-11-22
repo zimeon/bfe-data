@@ -1,0 +1,99 @@
+<rdf:RDF xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <madsrdf:RWO rdf:about="http://id.loc.gov/rwo/agents/n80076765">
+    <rdfs:label>
+              Adams, Douglas,
+              1952-2001
+            </rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <madsrdf:birthDate>
+      <skos:Concept>
+	<rdfs:label>(edtf) 1952-03-11</rdfs:label>
+      </skos:Concept>
+    </madsrdf:birthDate>
+    <madsrdf:deathDate>
+      <skos:Concept>
+	<rdfs:label>(edtf) 2001-05-11</rdfs:label>
+      </skos:Concept>
+    </madsrdf:deathDate>
+    <madsrdf:hasAffiliation>
+      <madsrdf:Affiliation>
+	<madsrdf:organization>
+	  <madsrdf:Organization>
+	    <rdfs:label>Digital Village (Firm)</rdfs:label>
+	  </madsrdf:Organization>
+	</madsrdf:organization>
+      </madsrdf:Affiliation>
+    </madsrdf:hasAffiliation>
+    <madsrdf:hasAffiliation>
+      <madsrdf:Affiliation>
+	<madsrdf:organization>
+	  <madsrdf:Organization rdf:about="http://id.loc.gov/authorities/names/n81008309">
+	    <madsrdf:authoritativeLabel>St. John's College (University of Cambridge)</madsrdf:authoritativeLabel>
+	  </madsrdf:Organization>
+	</madsrdf:organization>
+      </madsrdf:Affiliation>
+    </madsrdf:hasAffiliation>
+    <madsrdf:birthPlace>
+      <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79018410">
+	<madsrdf:authoritativeLabel>Cambridge (England)</madsrdf:authoritativeLabel>
+      </madsrdf:Geographic>
+    </madsrdf:birthPlace>
+    <madsrdf:deathPlace>
+      <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79081574">
+	<madsrdf:authoritativeLabel>Santa Barbara (Calif.)</madsrdf:authoritativeLabel>
+      </madsrdf:Geographic>
+    </madsrdf:deathPlace>
+    <madsrdf:associatedLocale>
+      <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79023147">
+	<madsrdf:authoritativeLabel>Great Britain</madsrdf:authoritativeLabel>
+      </madsrdf:Geographic>
+    </madsrdf:associatedLocale>
+    <madsrdf:associatedLocale>
+      <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n82068148">
+	<madsrdf:authoritativeLabel>England</madsrdf:authoritativeLabel>
+      </madsrdf:Geographic>
+    </madsrdf:associatedLocale>
+    <madsrdf:fieldOfActivity>
+      <skos:Concept>
+	<rdfs:label>(lcgft) Science fiction</rdfs:label>
+      </skos:Concept>
+    </madsrdf:fieldOfActivity>
+    <madsrdf:occupation>
+      <madsrdf:Occupation>
+	<rdfs:label>Computer game writer</rdfs:label>
+      </madsrdf:Occupation>
+    </madsrdf:occupation>
+    <madsrdf:occupation>
+      <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85009793">
+	<madsrdf:authoritativeLabel>Authors</madsrdf:authoritativeLabel>
+      </madsrdf:Occupation>
+    </madsrdf:occupation>
+    <madsrdf:occupation>
+      <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85092863">
+	<madsrdf:authoritativeLabel>Novelists</madsrdf:authoritativeLabel>
+      </madsrdf:Occupation>
+    </madsrdf:occupation>
+    <madsrdf:occupation>
+      <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85118942">
+	<madsrdf:authoritativeLabel>Screenwriters</madsrdf:authoritativeLabel>
+      </madsrdf:Occupation>
+    </madsrdf:occupation>
+    <madsrdf:occupation>
+      <madsrdf:Occupation rdf:about="http://id.loc.gov/authorities/subjects/sh85110591">
+	<madsrdf:authoritativeLabel>Radio writers</madsrdf:authoritativeLabel>
+      </madsrdf:Occupation>
+    </madsrdf:occupation>
+    <madsrdf:gender>
+      <skos:Concept rdf:about="http://id.loc.gov/authorities/demographicTerms/dg2015060003">
+	<madsrdf:authoritativeLabel>Males</madsrdf:authoritativeLabel>
+      </skos:Concept>
+    </madsrdf:gender>
+    <madsrdf:associatedLanguage>
+      <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	<madsrdf:code>eng</madsrdf:code>
+      </madsrdf:Language>
+    </madsrdf:associatedLanguage>
+    <madsrdf:isIdentifiedByAuthority rdf:resource="http://id.loc.gov/authorities/names/n80076765"/>
+  </madsrdf:RWO>
+</rdf:RDF>

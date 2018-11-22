@@ -1,12 +1,14 @@
 # Authority Term Fetch
 
-Exploring implications of the specification:
+Exploring implications of the one-level-plus-labels [Sinopia external data specification](https://ld4p.github.io/sinopia/external-data):
 
 > GET => Fetch:
 > * In (payload or param): URI
 > * 200 Out (payload, preference JSON): All RDF statements with URI as subject in External Store, plus triples that provide an  `rdfs:label` property for the object values.
 
-Start off with doing a current fetch from `lookup.ld4l.org` for the authority for Douglas Adams (this is based on the authority URI and not the RWO URI because the LC dump data doesn't yet include the RWO data...):
+## Using current `lookup.ld4l.org` with authority URIs
+
+Start off with doing a current fetch from `lookup.ld4l.org` for the authority for Douglas Adams. This is based on the authority URI and not the RWO URI because the LC dump data doesn't yet include the RWO data:
 
 ```
 > wget --output-document adams_fetch.jsonld  'https://lookup.ld4l.org/authorities/fetch/linked_data/locnames_ld4l_cache?uri=http://id.loc.gov/authorities/names/n80076765&format=jsonld'
@@ -80,3 +82,83 @@ So, this graph has 103 triples at present. We can extract the portion that confo
 <http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#isMemberOfMADSCollection> <http://id.loc.gov/authorities/names/collection_LCNAF> .
 <http://id.loc.gov/authorities/names/n80076765> <http://www.loc.gov/mads/rdf/v1#adminMetadata> _:N4f1f3ebc495a4c6aacd43faf08b01ac3 .
 ```
+
+Observations:
+
+  1. There are no `rdfs:label` properties in this graph. The labels that are present use `skos:prefLabel`, mads:authoritativeLabel`, `skos:altLabel`, and `skosxl:altLabel`
+  2. Some links to other entities are to entitites of a different type and so it is not obvious whether a particulaly scoped term fetch should return results for them (and in the general case we don't know whether the actual URI has proper linked-data support). For example, the RWO URI returns nothing if put into a fetch of QA using the same authority base:
+
+```
+> curl 'https://lookup.ld4l.org/authorities/fetch/linked_data/locnames_ld4l_cache?uri=http://id.loc.gov/rwo/agents/n80076765?format=jsonld'
+{}
+```
+
+  3. Some links to other entities are to bnodes (e.g. `_:N4f1f3ebc495a4c6aacd43faf08b01ac3` in above). In general one cannot expect bnode identifiers to have any meaning outside of a particular serialization document. One could have a rule that systems feeding data to Sinopia must support persistent (how persistent) bnode identifiers but that may be hard to support depending upon the implementation approach. One could alternatively require the bnode identifiers to be skolemized but that has a problem of inserting unwanted identifiers into Sinopia unless there is a local convention that allows them to identified and removed again to recover bnodes.
+
+## Comparison using LC RWO URIs
+
+Although we would like to use the RWO data, the data dumps from LC (and hence Dave's cache), do not currently have RWO data except the link from the authority. We can, however, grab this data straigh from LC on a per-item basis and explore what might happen if it were available via `lookup.ld4l.org``. Taking the case of Douglas Adams again:
+
+```
+> wget --output-document rwo_adams.xml http://id.loc.gov/rwo/agents/n80076765.rdf
+--2018-11-22 14:18:07--  http://id.loc.gov/rwo/agents/n80076765.rdf
+Resolving id.loc.gov... 104.16.54.16, 104.16.55.16, 2606:4700::6810:3710, ...
+Connecting to id.loc.gov|104.16.54.16|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4279 (4.2K) [application/rdf+xml]
+Saving to: 'rwo_adams.xml'
+
+rwo_adams.xml           100%[================================>]   4.18K  --.-KB/s   in 0.1s   
+
+2018-11-22 14:18:08 (32.1 KB/s) - 'rwo_adams.xml' saved [4279/4279]
+
+(py3)simeon@RottenApple 2018-11_authority_fetch (master *%)> spahqler --graph rwo_adams.xml --graph-format xml --query "CONSTRUCT { ?term ?p ?o . ?o rdfs:label ?o2 . } WHERE { ?term ?p ?o . OPTIONAL { ?o rdfs:label ?o2 . } }" --binding 'term=<http://id.loc.gov/rwo/agents/n80076765>' > rwo_adams_one_level.nt
+```
+
+we get the graph:
+
+```
+> more rwo_adams_one_level.nt 
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85009793> .
+_:Nd193bc28d56b435fae207b86d7b408be <http://www.w3.org/2000/01/rdf-schema#label> "(lcgft) Science fiction" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> _:Nd193bc28d56b435fae207b86d7b408be .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#deathPlace> <http://id.loc.gov/authorities/names/n79081574> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/2000/01/rdf-schema#label> "\n              Adams, Douglas,\n              1952-2001\n            " .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n82068148> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85110591> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:N7879b19d7417418fade5eb82213415f7 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority> <http://id.loc.gov/authorities/names/n80076765> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#deathDate> _:N0acc5713c08d4c38aed277efff05a624 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#hasAffiliation> _:N2d3935c4059f49c8be2bd8f4e65d2f29 .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLocale> <http://id.loc.gov/authorities/names/n79023147> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#birthPlace> <http://id.loc.gov/authorities/names/n79018410> .
+_:N4fbefa43c7234b0eb0ba80795990db7a <http://www.w3.org/2000/01/rdf-schema#label> "Computer game writer" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> _:N4fbefa43c7234b0eb0ba80795990db7a .
+_:N0acc5713c08d4c38aed277efff05a624 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 2001-05-11" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#gender> <http://id.loc.gov/authorities/demographicTerms/dg2015060003> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85118942> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85092863> .
+_:N7dd0d032d89d4dc58e623a5b21a353ef <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1952-03-11" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.loc.gov/mads/rdf/v1#birthDate> _:N7dd0d032d89d4dc58e623a5b21a353ef .
+
+```
+
+Observations:
+
+  1. There are some `rdfs:label` labels on entities linked from the RWO:
+
+```
+> grep http://www.w3.org/2000/01/rdf-schema#label rwo_adams_one_level.nt 
+_:Nd193bc28d56b435fae207b86d7b408be <http://www.w3.org/2000/01/rdf-schema#label> "(lcgft) Science fiction" .
+<http://id.loc.gov/rwo/agents/n80076765> <http://www.w3.org/2000/01/rdf-schema#label> "\n              Adams, Douglas,\n              1952-2001\n            " .
+_:N4fbefa43c7234b0eb0ba80795990db7a <http://www.w3.org/2000/01/rdf-schema#label> "Computer game writer" .
+_:N0acc5713c08d4c38aed277efff05a624 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 2001-05-11" .
+_:N7dd0d032d89d4dc58e623a5b21a353ef <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1952-03-11" .
+```
+
+  2. as before
+  3. as before
