@@ -28,14 +28,12 @@ adams_fetch.jsonld                             [ <=>                            
 > jsonld --format ntriples adams_fetch.jsonld > adams_fetch.nt
 
 Parsed 102 statements in 3.732466 seconds @ 27.327777399713753 statements/second.
-> wc -l adams_fetch.nt
-103 adams_fetch.nt
 ```
 
-So, this graph has 103 triples at present. We can extract the portion that conforms with the one-level-plus-labels specification using SPARQL:
+So, this graph has 102 triples. We can extract the portion that conforms with the one-level-plus-labels specification using SPARQL:
 
 ```
-> spahqler.py --graph adams_fetch.nt --query "CONSTRUCT { ?term ?p ?o . ?o rdfs:label ?o2 . } WHERE { ?term ?p ?o . OPTIONAL { ?o rdfs:label ?o2 . } }" --binding 'term=<http://id.loc.gov/authorities/names/n80076765>' > adams_one_level.nt
+> spahqler --graph adams_fetch.nt --query "CONSTRUCT { ?term ?p ?o . ?o rdfs:label ?o2 . } WHERE { ?term ?p ?o . OPTIONAL { ?o rdfs:label ?o2 . } }" --binding 'term=<http://id.loc.gov/authorities/names/n80076765>' > adams_one_level.nt
 
 > wc -l adams_one_level.nt
 43 adams_one_level.nt
@@ -158,6 +156,29 @@ _:Nd193bc28d56b435fae207b86d7b408be <http://www.w3.org/2000/01/rdf-schema#label>
 _:N4fbefa43c7234b0eb0ba80795990db7a <http://www.w3.org/2000/01/rdf-schema#label> "Computer game writer" .
 _:N0acc5713c08d4c38aed277efff05a624 <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 2001-05-11" .
 _:N7dd0d032d89d4dc58e623a5b21a353ef <http://www.w3.org/2000/01/rdf-schema#label> "(edtf) 1952-03-11" .
+```
+
+  though there are other labels too:
+
+```
+> grep -i label rwo_adams.xml 
+    <rdfs:label>
+            </rdfs:label>
+    <rdfs:label>(edtf) 1952-03-11</rdfs:label>
+    <rdfs:label>(edtf) 2001-05-11</rdfs:label>
+        <rdfs:label>Digital Village (Firm)</rdfs:label>
+        <madsrdf:authoritativeLabel>St. John's College (University of Cambridge)</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Cambridge (England)</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Santa Barbara (Calif.)</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Great Britain</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>England</madsrdf:authoritativeLabel>
+    <rdfs:label>(lcgft) Science fiction</rdfs:label>
+    <rdfs:label>Computer game writer</rdfs:label>
+    <madsrdf:authoritativeLabel>Authors</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Novelists</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Screenwriters</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Radio writers</madsrdf:authoritativeLabel>
+    <madsrdf:authoritativeLabel>Males</madsrdf:authoritativeLabel>
 ```
 
   2. as before
